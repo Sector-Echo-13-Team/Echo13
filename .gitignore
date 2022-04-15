@@ -242,3 +242,6 @@ check_regex_output.txt
 
 # vsc ionide cache
 .ionide/symbolCache.db
+
+#PR mirror thingy
+tools/merge-upstream-pull-request.sh
