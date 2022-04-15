@@ -12,7 +12,7 @@ set -f # disable pathname expansion
 set -C # noclobber
 
 readonly BASE_BRANCH_NAME="upstream-merge-"
-readonly BASE_PULL_URL="https://api.github.com/repos/Sector-Echo-13-Team/Echo13/pulls"
+readonly BASE_PULL_URL="https://api.github.com/repos/shiptest-ss13/Shiptest/pulls"
 
 # Ensure the current directory is a git directory
 if [ ! -d .git ]; then
