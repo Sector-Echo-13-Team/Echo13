@@ -90,4 +90,3 @@
 /datum/gear/suit/ianshirt
 	display_name = "worn shirt"
 	path = /obj/item/clothing/suit/ianshirt
-
