@@ -104,10 +104,6 @@
 	display_name = "wig"
 	path = /obj/item/clothing/head/wig
 
-/datum/gear/hat/naturalwig
-	display_name = "wig"
-	path = /obj/item/clothing/head/wig/natural
-
 /datum/gear/hat/cowboy
 	display_name = "cowboy hat"
 	path = /obj/item/clothing/head/cowboy
