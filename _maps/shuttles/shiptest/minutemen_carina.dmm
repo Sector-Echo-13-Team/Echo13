@@ -2119,25 +2119,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/item/storage/firstaid/fire{
-	pixel_x = -8;
-	pixel_y = 5
-	},
-/obj/item/storage/firstaid/brute{
-	pixel_x = 8;
-	pixel_y = 5
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = -8;
-	pixel_y = -5
-	},
-/obj/item/storage/firstaid/toxin{
-	pixel_x = 8;
-	pixel_y = -5
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "xX" = (
@@ -3472,10 +3453,6 @@
 /obj/structure/sign/poster/official/obey{
 	pixel_y = 32
 	},
-/obj/effect/turf_decal/corner/grey/diagonal,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
 "Oq" = (
@@ -3728,15 +3705,6 @@
 	},
 /obj/machinery/door/airlock/medical/glass{
 	name = "Infirmary"
-	},
-/obj/effect/turf_decal/corner/bottlegreen{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/bottlegreen{
-	dir = 9
-	},
-/obj/effect/turf_decal/borderfloor{
-	dir = 4
 	},
 /obj/effect/turf_decal/corner/bottlegreen{
 	dir = 8
@@ -5093,7 +5061,6 @@ FN
 HK
 rp
 Wm
-eR
 PX
 PX
 "}
@@ -5150,7 +5117,6 @@ Wm
 rF
 yN
 Wm
-Sl
 PX
 PX
 PX
