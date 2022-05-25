@@ -36,6 +36,10 @@
 /obj/machinery/computer/helm/Initialize(mapload, obj/item/circuitboard/C)
 	. = ..()
 	jump_allowed = world.time + CONFIG_GET(number/bluespace_jump_wait)
+<<<<<<< HEAD
+=======
+	ntnet_relay = new(src)
+>>>>>>> f723a8668a (Update helm.dm (#1118))
 
 /obj/machinery/computer/helm/proc/calibrate_jump(inline = FALSE)
 	if(jump_allowed < 0)
@@ -56,6 +60,18 @@
 	calibrating = TRUE
 	return TRUE
 
+<<<<<<< HEAD
+=======
+/obj/machinery/computer/helm/Destroy()
+	. = ..()
+	SStgui.close_uis(src)
+	ASSERT(length(concurrent_users) == 0)
+	QDEL_NULL(ntnet_relay)
+	if(current_ship)
+		current_ship.helms -= src
+		current_ship = null
+
+>>>>>>> f723a8668a (Update helm.dm (#1118))
 /obj/machinery/computer/helm/proc/cancel_jump()
 	priority_announce("Bluespace Pylon spooling down. Jump calibration aborted.", sender_override="[current_ship.name] Bluespace Pylon", zlevel=virtual_z())
 	calibrating = FALSE
