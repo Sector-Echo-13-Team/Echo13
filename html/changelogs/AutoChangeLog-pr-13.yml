@@ -1,0 +1,5 @@
+author: Echobot13000
+delete-after: true
+changes:
+  - rscadd: Adds an optional surgery step to cancel with a cautery, if the active
+      step does not require a cautery
