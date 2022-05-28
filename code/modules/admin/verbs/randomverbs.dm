@@ -957,7 +957,7 @@
 			var/obj/item/organ/tongue/felinid/tonje = new
 			tonje.Insert(dude, TRUE, FALSE)//WS End - Admin Punishment: Cat Tongue
 		if(ADMIN_PUNISHMENT_PIE)
-			var/obj/item/food/pie/cream/nostun/creamy = new(get_turf(target))
+			var/obj/item/reagent_containers/food/snacks/pie/cream/nostun/creamy = new(get_turf(target))
 			creamy.splat(target)
 	punish_log(target, punishment)
 
