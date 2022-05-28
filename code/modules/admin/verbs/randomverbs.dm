@@ -877,7 +877,7 @@
 	if(!check_rights(R_ADMIN) || !check_rights(R_FUN))
 		return
 
-	var/list/punishment_list = list(ADMIN_PUNISHMENT_BREAK_BONES, ADMIN_PUNISHMENT_LIGHTNING, ADMIN_PUNISHMENT_BRAINDAMAGE, ADMIN_PUNISHMENT_GIB, ADMIN_PUNISHMENT_BSA, ADMIN_PUNISHMENT_FIREBALL, ADMIN_PUNISHMENT_ROD, ADMIN_PUNISHMENT_SUPPLYPOD_QUICK, ADMIN_PUNISHMENT_SUPPLYPOD, ADMIN_PUNISHMENT_MAZING, ADMIN_PUNISHMENT_IMMERSE, ADMIN_PUNISHMENT_NYA)//WS Edit - Admin Punishment: Cat Tongue
+	var/list/punishment_list = list(ADMIN_PUNISHMENT_BREAK_BONES, ADMIN_PUNISHMENT_LIGHTNING, ADMIN_PUNISHMENT_BRAINDAMAGE, ADMIN_PUNISHMENT_GIB, ADMIN_PUNISHMENT_BSA, ADMIN_PUNISHMENT_FIREBALL, ADMIN_PUNISHMENT_ROD, ADMIN_PUNISHMENT_SUPPLYPOD_QUICK, ADMIN_PUNISHMENT_SUPPLYPOD, ADMIN_PUNISHMENT_MAZING, ADMIN_PUNISHMENT_IMMERSE, ADMIN_PUNISHMENT_NYA, ADMIN_PUNISHMENT_PIE)
 
 	var/punishment = input("Choose a punishment", "DIVINE SMITING") as null|anything in sortList(punishment_list)
 
@@ -948,7 +948,7 @@
 				return
 		if(ADMIN_PUNISHMENT_IMMERSE)
 			immerse_player(target)
-		if(ADMIN_PUNISHMENT_NYA)//WS Start - Admin Punishment: Cat Tongue
+		if(ADMIN_PUNISHMENT_NYA)
 			if(!iscarbon(target))
 				to_chat(usr,"<span class='warning'>This must be used on a carbon mob.</span>")
 				return
@@ -956,7 +956,9 @@
 			var/mob/living/carbon/dude = target
 			var/obj/item/organ/tongue/felinid/tonje = new
 			tonje.Insert(dude, TRUE, FALSE)//WS End - Admin Punishment: Cat Tongue
-
+		if(ADMIN_PUNISHMENT_PIE)
+			var/obj/item/food/pie/cream/nostun/creamy = new(get_turf(target))
+			creamy.splat(target)
 	punish_log(target, punishment)
 
 /client/proc/punish_log(whom, punishment)
