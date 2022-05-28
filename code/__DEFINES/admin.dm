@@ -81,7 +81,7 @@
 #define ADMIN_PUNISHMENT_MAZING "Puzzle"
 #define ADMIN_PUNISHMENT_IMMERSE "Fully Immerse"
 #define ADMIN_PUNISHMENT_NYA "Neko"
-#define ADMIN_PUNISHMENT_PIE "Creampie"
+#define ADMIN_PUNISHMENT_PIE "Cream Pie (Harmless)"
 
 #define AHELP_ACTIVE 1
 #define AHELP_CLOSED 2
