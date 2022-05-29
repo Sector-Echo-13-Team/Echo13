@@ -905,8 +905,6 @@
 				/obj/item/stack/sheet/bone = 5,
 				/obj/item/stack/sheet/sinew = 3)
 	category = CAT_PRIMAL
-<<<<<<< HEAD
-=======
 
 /datum/crafting_recipe/splint
 	name = "Makeshift Splint"
@@ -1122,18 +1120,3 @@
 	reqs = list(/datum/reagent/consumable/sodiumchloride = 10)
 	time = 5
 	category = CAT_DRINK
-
-/datum/crafting_recipe/crystalamulet
-	name = "Crystal Amulet"
-	result = /obj/item/clothing/neck/crystal_amulet
-	time = 4 SECONDS
-	reqs = list(/obj/item/strange_crystal = 3)
-	category = CAT_MISC
-
-/datum/crafting_recipe/crystalspear
-	name = "Crystal Spear"
-	result = /obj/item/spear/crystal
-	time = 4 SECONDS
-	reqs = list(/obj/item/strange_crystal = 2)
-	category = CAT_MISC
->>>>>>> 1a06b66241 (Overmap Expansion #3 (#601))
