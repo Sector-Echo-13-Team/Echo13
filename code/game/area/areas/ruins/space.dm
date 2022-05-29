@@ -401,8 +401,6 @@
 /area/ruin/space/has_grav/radship/Hallway
 	name = "Hallway"
 	icon_state = "away"
-<<<<<<< HEAD
-=======
 
 //MACSPACE
 /area/ruin/space/has_grav/powered/macspace
@@ -579,4 +577,3 @@
 	name = "Syndicate Laboratory 4071 Surrounding Area"
 	icon_state = "dk_yellow"
 	color = "#26773a88"
->>>>>>> c780735177 (New ruin any percent (#902))
