@@ -1046,23 +1046,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
-"sX" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
-/obj/machinery/door/window/eastleft,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/door/poddoor/preopen{
-	id = "ArrowheadEngineBlastdoors"
-	},
-/obj/item/wrench/crescent,
-/turf/open/floor/plating,
-/area/ship/engineering/engine)
 "tA" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -2990,7 +2973,7 @@ jq
 jq
 jq
 Eu
-sX
+Wa
 sS
 Eu
 tA
