@@ -236,21 +236,20 @@
 /turf/closed/wall/r_wall,
 /area/ship/engineering/atmospherics)
 "es" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "ArrowheadRTG";
 	name = "radiation shutter"
 	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
 /obj/structure/grille,
-/obj/structure/cable/yellow,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "ev" = (
@@ -572,6 +571,9 @@
 "kU" = (
 /obj/machinery/suit_storage_unit/independent/engineering,
 /obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/machinery/light_switch{
+	pixel_x = -26
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/electrical)
 "kW" = (
@@ -746,17 +748,21 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "nq" = (
-/obj/structure/cable/yellow{
-	icon_state = "0-8"
-	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "ArrowheadRTG";
 	name = "radiation shutter"
 	},
-/obj/structure/grille,
 /obj/structure/cable/yellow{
-	icon_state = "4-8"
+	icon_state = "1-4"
 	},
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/grille,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "nI" = (
@@ -1261,6 +1267,15 @@
 /area/ship/bridge)
 "xe" = (
 /obj/effect/turf_decal/industrial/warning,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 9
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "yb" = (
@@ -1408,8 +1423,19 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "Ap" = (
-/obj/structure/sign/warning/radiation/rad_area,
-/turf/closed/wall/r_wall,
+/obj/machinery/door/airlock/engineering{
+	name = "Engineering"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/electrical)
 "As" = (
 /obj/machinery/power/apc/auto_name/north,
@@ -1790,9 +1816,6 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Io" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
-	},
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
@@ -2313,16 +2336,10 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
 "PX" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 9
-	},
 /obj/effect/turf_decal/industrial/warning,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "Qb" = (
@@ -2418,19 +2435,8 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering/electrical)
 "RP" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/door/firedoor/border_only{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/door/airlock/engineering{
-	name = "Engineering"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/plasteel/tech/techmaint,
+/obj/structure/sign/warning/radiation/rad_area,
+/turf/closed/wall/r_wall,
 /area/ship/engineering/electrical)
 "RS" = (
 /obj/effect/turf_decal/borderfloor{
@@ -2798,10 +2804,6 @@
 	name = "fuel closet"
 	},
 /obj/item/wrench/crescent,
-/obj/machinery/light_switch{
-	pixel_x = -5;
-	pixel_y = 23
-	},
 /turf/open/floor/plating,
 /area/ship/engineering/electrical)
 "WZ" = (
@@ -3095,7 +3097,7 @@ XM
 XM
 XM
 XM
-Ap
+ps
 Io
 kn
 UQ
@@ -3152,7 +3154,7 @@ NY
 RA
 Zh
 gu
-ps
+RP
 WO
 Af
 ee
