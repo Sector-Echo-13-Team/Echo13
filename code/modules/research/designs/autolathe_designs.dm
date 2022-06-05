@@ -434,6 +434,30 @@
 	build_path = /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass
 	category = list("initial","Dinnerware")
 
+/datum/design/modglass
+	name = "Malleable Glass"
+	id = "mod_glass"
+	build_type = AUTOLATHE
+	materials = list(/datum/material/glass=500, /datum/material/silver=100)
+	build_path = /obj/item/reagent_containers/food/drinks/modglass
+	category = list("initial", "Dinnerware")
+
+/datum/design/modglass_small
+	name = "Small Malleable Glass"
+	id = "mod_glass_small"
+	build_type = AUTOLATHE
+	materials = list(/datum/material/glass=100, /datum/material/silver=100)
+	build_path = /obj/item/reagent_containers/food/drinks/modglass/small
+	category = list("initial", "Dinnerware")
+
+/datum/design/modglass_large
+	name = "Large Malleable Glass"
+	id = "mod_glass_large"
+	build_type = AUTOLATHE
+	materials = list(/datum/material/glass=500, /datum/material/silver=100)
+	build_path = /obj/item/reagent_containers/food/drinks/modglass/large
+	category = list("initial", "Dinnerware")
+
 /datum/design/shaker
 	name = "Shaker"
 	id = "shaker"
@@ -1123,8 +1147,6 @@
 	materials = list(/datum/material/plastic = 500)
 	build_path = /obj/item/stack/tape/industrial
 	category = list("initial", "Misc")
-<<<<<<< HEAD
-=======
 
 /datum/design/floor_painter
 	name = "Floor Painter"
@@ -1158,4 +1180,3 @@
 	materials = list(/datum/material/iron = 100, /datum/material/glass = 50)
 	build_path = /obj/item/assembly/control
 	category = list("initial","Misc")
->>>>>>> 9bb4ac2113 (Adds material requirement for floor painter (#1142))
