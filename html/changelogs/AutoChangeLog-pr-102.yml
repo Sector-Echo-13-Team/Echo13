@@ -1,0 +1,5 @@
+author: Echobot13000
+delete-after: true
+changes:
+  - rscadd: Added the Rube-Goldberg Class Engineering Project ship.
+  - imageadd: Added a steering wheel (sprite by Dexxiol)
