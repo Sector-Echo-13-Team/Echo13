@@ -917,6 +917,11 @@
 "qO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = 17;
+	pixel_y = 6
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/hydroponics)
 "qT" = (
