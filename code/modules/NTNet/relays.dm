@@ -114,3 +114,13 @@
 		D.error = "Connection to quantum relay severed"
 
 	return ..()
+<<<<<<< HEAD
+=======
+
+/obj/machinery/ntnet_relay/integrated
+	name = "Integrated NTNet Quantum Relay"
+	use_power = NO_POWER_USE
+	circuit = null
+	active_power_usage = 0
+	idle_power_usage = 0
+>>>>>>> 3d547e2bb7 (you know probably setting these vars to just, zero, will probably work. Probably. (#1180))
