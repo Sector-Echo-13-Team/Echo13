@@ -113,6 +113,24 @@
 
 //Shiptest Outfits
 
+<<<<<<< HEAD
+=======
+/datum/outfit/job/engineer/minutemen
+	name = "Mechanic (Colonial Minutemen)"
+
+	uniform = /obj/item/clothing/under/rank/security/officer/minutemen
+	accessory = /obj/item/clothing/accessory/armband/engine
+	head = /obj/item/clothing/head/hardhat/dblue
+	suit =  /obj/item/clothing/suit/hazardvest
+
+/datum/outfit/job/engineer/inteq
+	name = "IRMG Artificer (Inteq)"
+
+	uniform = /obj/item/clothing/under/syndicate/inteq/artificer
+	head = /obj/item/clothing/head/soft/inteq
+	shoes = /obj/item/clothing/shoes/combat
+
+>>>>>>> e63dedc9b0 (IRMG Colossus-class Armored Frigate (#1061))
 /datum/outfit/job/engineer/solgov
 	name = "Ship Engineer (SolGov)"
 
