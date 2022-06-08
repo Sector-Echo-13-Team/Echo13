@@ -48,9 +48,15 @@
 
 //Misc
 
+<<<<<<< HEAD
 /datum/gear/accessory/armband_red
 	display_name = "armband"
 	path = /obj/item/clothing/accessory/armband
+=======
+/datum/gear/accessory/waistcoat
+	display_name = "waistcoat"
+	path = /obj/item/clothing/accessory/waistcoat
+>>>>>>> 4a69138553 (Update loadout_accessories.dm (#1143))
 	slot = null
 
 /datum/gear/accessory/stethoscope
