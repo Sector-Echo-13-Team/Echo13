@@ -93,11 +93,30 @@
 	var/obj/docking_port/mobile/port = SSshuttle.get_containing_shuttle(src)
 	if(port?.current_ship)
 		current_ship = port.current_ship
+<<<<<<< HEAD
 
 /obj/machinery/computer/helm/ui_interact(mob/user, datum/tgui/ui)
 	// Update UI
 	if(!current_ship && !reload_ship())
 		return
+=======
+		current_ship.helms |= src
+
+/obj/machinery/computer/helm/ui_interact(mob/living/user, datum/tgui/ui)
+	// Update UI
+	if(!current_ship && !reload_ship())
+		return
+
+	if(isliving(user) && !viewer && check_keylock())
+		return
+
+	if(!current_ship.shipkey && istype(user) && Adjacent(user) && !viewer)
+		say("Generated new shipkey, do not lose it!")
+		var/key = new /obj/item/key/ship(get_turf(src), current_ship)
+		user.put_in_hands(key)
+		return
+
+>>>>>>> 05551d16cd (ghosts can interact with helm consoles again + viewscreens work if your helm console is locked (#1158))
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		var/user_ref = REF(user)
