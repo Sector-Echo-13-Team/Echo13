@@ -27,6 +27,16 @@
 	description = "An odd coffin shaped pirate hut that the inhabitant of died in."
 	suffix = "jungle_surface_coffinpirate.dmm"
 
+<<<<<<< HEAD
+=======
+/datum/map_template/ruin/jungle/medtech
+	name = "MedTech facility"
+	id = "medtech-facility"
+	description = "A MedTech pharmaceutical manufacturing plant where something went terribly wrong."
+	suffix = "jungle_medtech_outbreak.dmm"
+
+
+>>>>>>> 2808495527 (The MedTech™ chemical manufacturing plant ruin  (#945))
 ///how bad can i possibly be?
 /datum/map_template/ruin/jungle/onceler
 	name = "Thneed Factory"
