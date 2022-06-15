@@ -301,13 +301,6 @@
 	sound_environment = SOUND_ENVIRONMENT_MOUNTAINS
 	ambientsounds = REEBE
 
-/area/overmap_encounter/planetoid/reebe/Entered(atom/movable/AM)
-	. = ..()
-	if(ismob(AM))
-		var/mob/M = AM
-		if(M.client)
-			addtimer(CALLBACK(M.client, /client/proc/play_reebe_ambience), 900)
-
 /datum/overmap/dynamic/empty
 	name = "Empty Space"
 
