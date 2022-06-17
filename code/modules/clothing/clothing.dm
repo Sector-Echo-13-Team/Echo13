@@ -288,6 +288,7 @@
 	female_clothing_icon 			= fcopy_rsc(female_clothing_icon)
 	GLOB.female_clothing_icons[index] = female_clothing_icon
 
+<<<<<<< HEAD
 /obj/item/clothing/proc/generate_species_clothing(file2use, state2use, species)
 	var/icon/human_clothing_icon = icon(file2use, state2use)
 
@@ -296,6 +297,39 @@
 		return
 
 	var/icon/species_icon = icon(species, greyscale_icon_state)
+=======
+/obj/item/proc/generate_species_clothing(file2use, state2use, layer, datum/species/mob_species)
+	if(!icon_exists(file2use, state2use))
+		return
+
+	var/icon/human_clothing_icon = icon(file2use, state2use)
+
+	if("[layer]" in mob_species.offset_clothing)
+		// This code taken from Baystation 12
+		var/icon/final_I = icon('icons/blanks/32x32.dmi', "nothing")
+		var/list/shifts = mob_species.offset_clothing["[layer]"]
+
+		// Apply all pixel shifts for each direction.
+		for(var/shift_facing in shifts)
+			var/list/facing_list = shifts[shift_facing]
+			var/use_dir = text2num(shift_facing)
+			var/icon/equip = icon(file2use, icon_state = state2use, dir = use_dir)
+			var/icon/canvas = icon('icons/blanks/32x32.dmi', "nothing")
+			canvas.Blend(equip, ICON_OVERLAY, facing_list["x"]+1, facing_list["y"]+1)
+			final_I.Insert(canvas, dir = use_dir)
+		final_I = fcopy_rsc(final_I)
+		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = final_I
+		return TRUE
+
+	if(!greyscale_colors || !greyscale_icon_state)
+		GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = human_clothing_icon
+		return
+
+	if(!icon_exists(mob_species.species_clothing_path, greyscale_icon_state))
+		return
+
+	var/icon/species_icon = icon(mob_species.species_clothing_path, greyscale_icon_state)
+>>>>>>> c685810c39 (Keppification (#1007))
 	var/list/final_list = list()
 	for(var/i in 1 to 3)
 		if(length(greyscale_colors) < i)
@@ -309,7 +343,13 @@
 
 	species_icon.MapColors(final_list[1], final_list[2], final_list[3])
 	species_icon = fcopy_rsc(species_icon)
+<<<<<<< HEAD
 	GLOB.species_clothing_icons[species]["[file2use]-[state2use]"] = species_icon
+=======
+	GLOB.species_clothing_icons[mob_species.id]["[file2use]-[state2use]"] = species_icon
+
+	return TRUE
+>>>>>>> c685810c39 (Keppification (#1007))
 
 /obj/item/clothing/under/verb/toggle()
 	set name = "Adjust Suit Sensors"
