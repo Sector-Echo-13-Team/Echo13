@@ -126,7 +126,6 @@
 /area/lavaland/surface/outdoors/unexplored //monsters and ruins spawn here
 	icon_state = "unexplored"
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
-	map_generator = /datum/map_generator/cave_generator/lavaland
 
 /area/lavaland/surface/outdoors/unexplored/danger //megafauna will also spawn here
 	icon_state = "danger"
@@ -172,7 +171,6 @@
 	icon_state = "unexplored"
 	poweralm = FALSE
 	area_flags = UNIQUE_AREA | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | CAVES_ALLOWED
-	map_generator = /datum/map_generator/cave_generator/icemoon/surface
 
 /area/icemoon/surface/outdoors/unexplored/danger
 	icon_state = "unexplored"
@@ -197,7 +195,12 @@
 	ambientsounds = MINING
 	poweralm = FALSE
 	area_flags = UNIQUE_AREA | FLORA_ALLOWED
+<<<<<<< HEAD
 	map_generator = /datum/map_generator/cave_generator/icemoon
+=======
+	min_ambience_cooldown = 70 SECONDS
+	max_ambience_cooldown = 220 SECONDS
+>>>>>>> c93afaf2fe (removes deprecated map_generator variable on /area (#1238))
 
 /area/icemoon/underground/unexplored // mobs and megafauna and ruins spawn here
 	name = "Icemoon Caves"
@@ -262,7 +265,6 @@
 	ambientsounds = MINING
 	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
-	map_generator = /datum/map_generator/cave_generator/whitesands
 
 /area/whitesands/surface/outdoors // weather happens here
 	name = "Whitesands Dunes"
@@ -300,7 +302,6 @@
 	ambientsounds = MINING
 	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
-	map_generator = /datum/map_generator/jungle_generator
 
 /area/jungle/surface/outdoors // weather happens here
 	name = "Jungle Wastes"
@@ -338,7 +339,6 @@
 	ambientsounds = MINING
 	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
-	map_generator = /datum/map_generator/cave_generator/rockplanet
 
 /area/rock/surface/outdoors // weather happens here
 	name = "Industrial Wastes"
