@@ -1,0 +1,5 @@
+author: TheNeoGamer42
+delete-after: true
+changes:
+  - bugfix: the arrowhead class should no longer just have no power, also theres another
+      sink (woo)

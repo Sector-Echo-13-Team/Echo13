@@ -37,7 +37,7 @@
 
 /datum/chemical_reaction/plasmasolidification/on_reaction(datum/reagents/holder, created_volume)
 	var/location = get_turf(holder.my_atom)
-	for(var/i = 1, i <= created_volume, i++)
+	for(var/i in 1 to created_volume)
 		new /obj/item/stack/sheet/mineral/plasma(location)
 
 /datum/chemical_reaction/goldsolidification
@@ -659,6 +659,10 @@
 //	results = list(/datum/reagent/mutationtoxin/zombie = 1)
 //	required_reagents  = list(/datum/reagent/aslimetoxin = 1, /datum/reagent/toxin = 1, /datum/reagent/toxin/bad_food = 1) //Because rotting
 
+/datum/chemical_reaction/mutationtoxin/kobold
+	results = list(/datum/reagent/mutationtoxin/kobold = 1)
+	required_reagents  = list(/datum/reagent/aslimetoxin = 1, /datum/reagent/mutationtoxin/ash = 1, /datum/reagent/consumable/tinlux = 5)
+
 /datum/chemical_reaction/mutationtoxin/goofzombie //go on. try it with holopara
 	results = list(/datum/reagent/mutationtoxin/goofzombie = 1)
 	required_reagents  = list(/datum/reagent/aslimetoxin = 1, /datum/reagent/drug/krokodil = 10, /datum/reagent/toxin/bad_food = 10) //Because rotting
@@ -674,8 +678,6 @@
 /datum/chemical_reaction/mutationtoxin/plasma
 	results = list(/datum/reagent/mutationtoxin/plasma = 1)
 	required_reagents  = list(/datum/reagent/aslimetoxin = 1, /datum/reagent/toxin/plasma = 60, /datum/reagent/uranium = 20)
-<<<<<<< HEAD
-=======
 
 /datum/chemical_reaction/cellulose_carbonization/ash		// Sub for cellulose
 	required_reagents = list(/datum/reagent/ash_fibers)
@@ -710,4 +712,3 @@
 	var/location = get_turf(holder.my_atom)
 	for(var/i = 1, i <= created_volume, i++)
 		new /obj/item/stack/sheet/mineral/titanium(location)
->>>>>>> 1028ad0f46 (Fixes missing healing item icons and removes foamdupes on said items (#1121))

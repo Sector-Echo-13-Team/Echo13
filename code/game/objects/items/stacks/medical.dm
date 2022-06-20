@@ -373,8 +373,6 @@
 
 	The interesting limb targeting mechanic is retained and i still believe they will be a viable choice, especially when healing others in the field.
 	*/
-<<<<<<< HEAD
-=======
 
 // SPLINTS
 /obj/item/stack/medical/splint
@@ -416,4 +414,3 @@
 	icon_state = "hointment"
 	desc = "Herb slurry meant to treat burns."
 	heal_burn = 15
->>>>>>> 1028ad0f46 (Fixes missing healing item icons and removes foamdupes on said items (#1121))

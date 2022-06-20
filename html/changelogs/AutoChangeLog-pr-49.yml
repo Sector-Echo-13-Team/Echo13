@@ -1,0 +1,4 @@
+author: Echobot13000
+delete-after: true
+changes:
+  - tweak: Empty wands have a rare chance to activate one last time when used.
