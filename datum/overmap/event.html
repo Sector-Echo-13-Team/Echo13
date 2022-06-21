@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;overmap&#x2F;event - Sector Echo 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Sector Echo 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/overmap/event.html#var">Var Details</a> - <a href="datum/overmap/event.html#proc">Proc Details</a></header>
+<main>
+<h1>Overmap Events <aside>/<a href="datum.html">datum</a>/<a href="datum/overmap.html">overmap</a>/<a href="datum/overmap/event.html">event</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/objects/event_datum.dm#L6">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;objects&#x2F;event_datum.dm 6"/></a></h1>
+
+<p>These are events that have some sort of effect on overmap ships that are on the same tile.</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/overmap/event.html#var/chain_rate">chain_rate</a></th><td>How many additional tiles to spawn at once in the selected orbit. Used with OVERMAP_GENERATOR_SOLAR.</td></tr>
+            <tr><th><a href="datum/overmap/event.html#var/chance_to_affect">chance_to_affect</a></th><td>If prob(this), call affect_ship when processed</td></tr>
+            <tr><th><a href="datum/overmap/event.html#var/spread_chance">spread_chance</a></th><td>Chance to spread to nearby tiles if spawned</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/overmap/event.html#proc/affect_ship">affect_ship</a></th><td>The proc called on all ships that are currently being affected.</td></tr>
+            <tr><th><a href="datum/overmap/event.html#proc/apply_effect">apply_effect</a></th><td>The main proc for calling other procs. Called by SSovermap.</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/chain_rate"><aside class="declaration">var </aside>chain_rate
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/objects/event_datum.dm#L13">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;objects&#x2F;event_datum.dm 13"/></a></h3>
+        <p>How many additional tiles to spawn at once in the selected orbit. Used with OVERMAP_GENERATOR_SOLAR.</p><h3 id="var/chance_to_affect"><aside class="declaration">var </aside>chance_to_affect
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/objects/event_datum.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;objects&#x2F;event_datum.dm 9"/></a></h3>
+        <p>If prob(this), call affect_ship when processed</p><h3 id="var/spread_chance"><aside class="declaration">var </aside>spread_chance
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/objects/event_datum.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;objects&#x2F;event_datum.dm 11"/></a></h3>
+        <p>Chance to spread to nearby tiles if spawned</p><h2 id="proc">Proc Details</h2><h3 id="proc/affect_ship"><aside class="declaration">proc </aside>affect_ship<aside>(/<a href="datum.html">datum</a>/<a href="datum/overmap.html">overmap</a>/<a href="datum/overmap/ship.html">ship</a>/<a href="datum/overmap/ship/controlled.html">controlled</a>/S) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/objects/event_datum.dm#L34">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;objects&#x2F;event_datum.dm 34"/></a></aside>
+        </h3>
+        <p>The proc called on all ships that are currently being affected.</p><h3 id="proc/apply_effect"><aside class="declaration">proc </aside>apply_effect<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/objects/event_datum.dm#L26">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;objects&#x2F;event_datum.dm 26"/></a></aside>
+        </h3>
+        <p>The main proc for calling other procs. Called by SSovermap.</p></main>
+<footer>
+    shiptest.dme
+    <a href="https://github.com/Sector-Echo-13-Team/Echo13/tree/032fb85002b9bedff20154818a8f7ddfc76ebd2e">032fb85</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

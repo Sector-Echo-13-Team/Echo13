@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;virtual_level - Sector Echo 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Sector Echo 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/virtual_level.html#var">Var Details</a> - <a href="datum/virtual_level.html#proc">Proc Details</a></header>
+<main>
+<h1>virtual_level <aside>/<a href="datum.html">datum</a>/<a href="datum/virtual_level.html">virtual_level</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L85">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 85"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/crosslinked">crosslinked</a></th><td>Neighboring virtual levels, associative by direction</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/down_linkage">down_linkage</a></th><td>Virtual level that is below this one (multi-z)</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/high_x">high_x</a></th><td>The high X boundary of the sub-zone</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/high_y">high_y</a></th><td>The high Y boundary of the sub-zone</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/low_x">low_x</a></th><td>The low X boundary of the sub-zone</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/low_y">low_y</a></th><td>The low Y boundary of the sub-zone</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/mapping_margin">mapping_margin</a></th><td>Margin for dockers and ruins to avoid placing things</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/parent_level">parent_level</a></th><td>Z level which contains this virtual level</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/reserved_margin">reserved_margin</a></th><td>The amount of margin we have reserved in turfs on all sides of the reservation</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/traits">traits</a></th><td>Traits of this virtual level</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/up_linkage">up_linkage</a></th><td>Virtual level that is above this one (multi-z)</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/x_distance">x_distance</a></th><td>Distance in the X axis of the sub-zone</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/y_distance">y_distance</a></th><td>Distance in the Y axis of the sub-zone</td></tr>
+            <tr><th><a href="datum/virtual_level.html#var/z_value">z_value</a></th><td>Z value of the virtual level, for easy access</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/virtual_level.html#proc/New">New</a></th><td>Should you want to do any advanced shanenigans, you can turn this into an argument and adjust unlink logic, and it'll work</td></tr>
+            <tr><th><a href="datum/virtual_level.html#proc/get_side_turf">get_side_turf</a></th><td>Gets a random turf on a side of a virtual level</td></tr>
+            <tr><th><a href="datum/virtual_level.html#proc/get_trait">get_trait</a></th><td>Create a dummy reservation to safeguard this space from being allocated mid-clearing in case the virtual level does get deleted</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/crosslinked"><aside class="declaration">var </aside>crosslinked
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L112">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 112"/></a></h3>
+        <p>Neighboring virtual levels, associative by direction</p><h3 id="var/down_linkage"><aside class="declaration">var </aside>down_linkage
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/virtual_level.html">virtual_level</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L110">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 110"/></a></h3>
+        <p>Virtual level that is below this one (multi-z)</p><h3 id="var/high_x"><aside class="declaration">var </aside>high_x
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L98">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 98"/></a></h3>
+        <p>The high X boundary of the sub-zone</p><h3 id="var/high_y"><aside class="declaration">var </aside>high_y
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L100">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 100"/></a></h3>
+        <p>The high Y boundary of the sub-zone</p><h3 id="var/low_x"><aside class="declaration">var </aside>low_x
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L94">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 94"/></a></h3>
+        <p>The low X boundary of the sub-zone</p><h3 id="var/low_y"><aside class="declaration">var </aside>low_y
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L96">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 96"/></a></h3>
+        <p>The low Y boundary of the sub-zone</p><h3 id="var/mapping_margin"><aside class="declaration">var </aside>mapping_margin
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L118">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 118"/></a></h3>
+        <p>Margin for dockers and ruins to avoid placing things</p><h3 id="var/parent_level"><aside class="declaration">var </aside>parent_level
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/space_level.html">space_level</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L92">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 92"/></a></h3>
+        <p>Z level which contains this virtual level</p><h3 id="var/reserved_margin"><aside class="declaration">var </aside>reserved_margin
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L116">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 116"/></a></h3>
+        <p>The amount of margin we have reserved in turfs on all sides of the reservation</p><h3 id="var/traits"><aside class="declaration">var </aside>traits
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L114">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 114"/></a></h3>
+        <p>Traits of this virtual level</p><h3 id="var/up_linkage"><aside class="declaration">var </aside>up_linkage
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/virtual_level.html">virtual_level</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L108">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 108"/></a></h3>
+        <p>Virtual level that is above this one (multi-z)</p><h3 id="var/x_distance"><aside class="declaration">var </aside>x_distance
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L102">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 102"/></a></h3>
+        <p>Distance in the X axis of the sub-zone</p><h3 id="var/y_distance"><aside class="declaration">var </aside>y_distance
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L104">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 104"/></a></h3>
+        <p>Distance in the Y axis of the sub-zone</p><h3 id="var/z_value"><aside class="declaration">var </aside>z_value
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L106">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 106"/></a></h3>
+        <p>Z value of the virtual level, for easy access</p><h2 id="proc">Proc Details</h2><h3 id="proc/New">New<aside>(passed_name, /list/passed_traits, /<a href="datum.html">datum</a>/<a href="datum/map_zone.html">map_zone</a>/passed_map, lx, ly, hx, hy, passed_z) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L389">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 389"/></a></aside>
+        </h3>
+        <p>Should you want to do any advanced shanenigans, you can turn this into an argument and adjust unlink logic, and it'll work</p><h3 id="proc/get_side_turf"><aside class="declaration">proc </aside>get_side_turf<aside>(dir, padding, middle) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L439">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 439"/></a></aside>
+        </h3>
+        <p>Gets a random turf on a side of a virtual level</p><h3 id="proc/get_trait"><aside class="declaration">proc </aside>get_trait<aside>(trait) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/datums/map_zones.dm#L429">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;map_zones.dm 429"/></a></aside>
+        </h3>
+        <p>Create a dummy reservation to safeguard this space from being allocated mid-clearing in case the virtual level does get deleted</p></main>
+<footer>
+    shiptest.dme
+    <a href="https://github.com/Sector-Echo-13-Team/Echo13/tree/032fb85002b9bedff20154818a8f7ddfc76ebd2e">032fb85</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

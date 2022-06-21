@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>code&#x2F;__DEFINES&#x2F;species.dm - Sector Echo 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Sector Echo 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="code/__DEFINES/species.html#define">Define Details</a></header>
+<main>
+<h1>code/__DEFINES/species.dm 
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm"/></a></h1>
+
+<table class="summary" cellspacing="0">
+        <tr><th><a href="code/__DEFINES/species.html#define/HAZARD_HIGH_PRESSURE">HAZARD_HIGH_PRESSURE</a></th><td>This determins at what pressure the ultra-high pressure red icon is displayed. (This one is set as a constant)</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/WARNING_HIGH_PRESSURE">WARNING_HIGH_PRESSURE</a></th><td>This determins when the orange pressure icon is displayed (it is 0.7 * HAZARD_HIGH_PRESSURE)</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/WARNING_LOW_PRESSURE">WARNING_LOW_PRESSURE</a></th><td>This is when the gray low pressure icon is displayed. (it is 2.5 * HAZARD_LOW_PRESSURE)</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HAZARD_LOW_PRESSURE">HAZARD_LOW_PRESSURE</a></th><td>This is when the black ultra-low pressure icon is displayed. (This one is set as a constant)</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/TEMPERATURE_DAMAGE_COEFFICIENT">TEMPERATURE_DAMAGE_COEFFICIENT</a></th><td>This is used in handle_temperature_damage() for humans, and in reagents that affect body temperature. Temperature damage is multiplied by this amount.</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HUMAN_BODYTEMP_NORMAL">HUMAN_BODYTEMP_NORMAL</a></th><td>The natural temperature for a body</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR">HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR</a></th><td>This is the divisor which handles how much of the temperature difference between the current body temperature and 310.15K (optimal temperature) humans auto-regenerate each tick. The higher the number, the slower the recovery. This is applied each tick, so long as the mob is alive.</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HUMAN_BODYTEMP_AUTORECOVERY_MINIMUM">HUMAN_BODYTEMP_AUTORECOVERY_MINIMUM</a></th><td>Minimum amount of kelvin moved toward 310K per tick. So long as abs(310.15 - bodytemp) is more than 50.</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HUMAN_BODYTEMP_COLD_DIVISOR">HUMAN_BODYTEMP_COLD_DIVISOR</a></th><td>Similar to the HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR, but this is the divisor which is applied at the stage that follows autorecovery. This is the divisor which comes into play when the human's loc temperature is lower than their body temperature. Make it lower to lose bodytemp faster.</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HUMAN_BODYTEMP_HEAT_DIVISOR">HUMAN_BODYTEMP_HEAT_DIVISOR</a></th><td>Similar to the HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR, but this is the divisor which is applied at the stage that follows autorecovery. This is the divisor which comes into play when the human's loc temperature is higher than their body temperature. Make it lower to gain bodytemp faster.</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HUMAN_BODYTEMP_COOLING_MAX">HUMAN_BODYTEMP_COOLING_MAX</a></th><td>The maximum number of degrees that your body can cool in 1 tick, due to the environment, when in a cold area.</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HUMAN_BODYTEMP_HEATING_MAX">HUMAN_BODYTEMP_HEATING_MAX</a></th><td>The maximum number of degrees that your body can heat up in 1 tick, due to the environment, when in a hot area.</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT">HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT</a></th><td>The body temperature limit the human body can take before it starts taking damage from heat.
+This also affects how fast the body normalises it's temperature when hot.
+340k is about 66c, and rather high for a human.</td></tr>
+        <tr><th><a href="code/__DEFINES/species.html#define/HUMAN_BODYTEMP_COLD_DAMAGE_LIMIT">HUMAN_BODYTEMP_COLD_DAMAGE_LIMIT</a></th><td>The body temperature limit the human body can take before it starts taking damage from cold.
+This also affects how fast the body normalises it's temperature when cold.
+270k is about -3c, that is below freezing and would hurt over time.</td></tr></table><h2 id="define">Define Details</h2>
+<h3 id="define/HAZARD_HIGH_PRESSURE"><aside class="declaration">#define </aside>HAZARD_HIGH_PRESSURE
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L3">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 3"/></a>
+    </h3>
+    <p>This determins at what pressure the ultra-high pressure red icon is displayed. (This one is set as a constant)</p><h3 id="define/HAZARD_LOW_PRESSURE"><aside class="declaration">#define </aside>HAZARD_LOW_PRESSURE
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 9"/></a>
+    </h3>
+    <p>This is when the black ultra-low pressure icon is displayed. (This one is set as a constant)</p><h3 id="define/HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR"><aside class="declaration">#define </aside>HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 17"/></a>
+    </h3>
+    <p>This is the divisor which handles how much of the temperature difference between the current body temperature and 310.15K (optimal temperature) humans auto-regenerate each tick. The higher the number, the slower the recovery. This is applied each tick, so long as the mob is alive.</p><h3 id="define/HUMAN_BODYTEMP_AUTORECOVERY_MINIMUM"><aside class="declaration">#define </aside>HUMAN_BODYTEMP_AUTORECOVERY_MINIMUM
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L19">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 19"/></a>
+    </h3>
+    <p>Minimum amount of kelvin moved toward 310K per tick. So long as abs(310.15 - bodytemp) is more than 50.</p><h3 id="define/HUMAN_BODYTEMP_COLD_DAMAGE_LIMIT"><aside class="declaration">#define </aside>HUMAN_BODYTEMP_COLD_DAMAGE_LIMIT
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L35">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 35"/></a>
+    </h3>
+    <p>The body temperature limit the human body can take before it starts taking damage from cold.
+This also affects how fast the body normalises it's temperature when cold.
+270k is about -3c, that is below freezing and would hurt over time.</p><h3 id="define/HUMAN_BODYTEMP_COLD_DIVISOR"><aside class="declaration">#define </aside>HUMAN_BODYTEMP_COLD_DIVISOR
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L21">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 21"/></a>
+    </h3>
+    <p>Similar to the HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR, but this is the divisor which is applied at the stage that follows autorecovery. This is the divisor which comes into play when the human's loc temperature is lower than their body temperature. Make it lower to lose bodytemp faster.</p><h3 id="define/HUMAN_BODYTEMP_COOLING_MAX"><aside class="declaration">#define </aside>HUMAN_BODYTEMP_COOLING_MAX
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L25">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 25"/></a>
+    </h3>
+    <p>The maximum number of degrees that your body can cool in 1 tick, due to the environment, when in a cold area.</p><h3 id="define/HUMAN_BODYTEMP_HEATING_MAX"><aside class="declaration">#define </aside>HUMAN_BODYTEMP_HEATING_MAX
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L27">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 27"/></a>
+    </h3>
+    <p>The maximum number of degrees that your body can heat up in 1 tick, due to the environment, when in a hot area.</p><h3 id="define/HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT"><aside class="declaration">#define </aside>HUMAN_BODYTEMP_HEAT_DAMAGE_LIMIT
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L31">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 31"/></a>
+    </h3>
+    <p>The body temperature limit the human body can take before it starts taking damage from heat.
+This also affects how fast the body normalises it's temperature when hot.
+340k is about 66c, and rather high for a human.</p><h3 id="define/HUMAN_BODYTEMP_HEAT_DIVISOR"><aside class="declaration">#define </aside>HUMAN_BODYTEMP_HEAT_DIVISOR
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L23">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 23"/></a>
+    </h3>
+    <p>Similar to the HUMAN_BODYTEMP_AUTORECOVERY_DIVISOR, but this is the divisor which is applied at the stage that follows autorecovery. This is the divisor which comes into play when the human's loc temperature is higher than their body temperature. Make it lower to gain bodytemp faster.</p><h3 id="define/HUMAN_BODYTEMP_NORMAL"><aside class="declaration">#define </aside>HUMAN_BODYTEMP_NORMAL
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L15">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 15"/></a>
+    </h3>
+    <p>The natural temperature for a body</p><h3 id="define/TEMPERATURE_DAMAGE_COEFFICIENT"><aside class="declaration">#define </aside>TEMPERATURE_DAMAGE_COEFFICIENT
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L12">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 12"/></a>
+    </h3>
+    <p>This is used in handle_temperature_damage() for humans, and in reagents that affect body temperature. Temperature damage is multiplied by this amount.</p><h3 id="define/WARNING_HIGH_PRESSURE"><aside class="declaration">#define </aside>WARNING_HIGH_PRESSURE
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L5">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 5"/></a>
+    </h3>
+    <p>This determins when the orange pressure icon is displayed (it is 0.7 * HAZARD_HIGH_PRESSURE)</p><h3 id="define/WARNING_LOW_PRESSURE"><aside class="declaration">#define </aside>WARNING_LOW_PRESSURE
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/__DEFINES/species.dm#L7">
+        <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;species.dm 7"/></a>
+    </h3>
+    <p>This is when the gray low pressure icon is displayed. (it is 2.5 * HAZARD_LOW_PRESSURE)</p></main>
+<footer>
+    shiptest.dme
+    <a href="https://github.com/Sector-Echo-13-Team/Echo13/tree/032fb85002b9bedff20154818a8f7ddfc76ebd2e">032fb85</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

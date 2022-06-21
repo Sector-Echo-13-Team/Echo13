@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;turf - Sector Echo 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Sector Echo 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="turf.html#var">Var Details</a> - <a href="turf.html#proc">Proc Details</a></header>
+<main>
+<h1>turf <aside>/<a href="turf.html">turf</a></aside><aside> inherits /<a href="atom.html">atom</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L1">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 1"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="turf.html#var/directional_opacity">directional_opacity</a></th><td>Which directions does this turf block the vision of, taking into account both the turf's opacity and the movable opacity_sources.</td></tr>
+            <tr><th><a href="turf.html#var/dynamic_lumcount">dynamic_lumcount</a></th><td>Lumcount added by sources other than lighting datum objects, such as the overlay lighting component.</td></tr>
+            <tr><th><a href="turf.html#var/fixed_underlay">fixed_underlay</a></th><td>Icon-smoothing variable to map a diagonal wall corner with a fixed underlay.</td></tr>
+            <tr><th><a href="turf.html#var/initial_temperature">initial_temperature</a></th><td>How hot the turf is, in kelvin</td></tr>
+            <tr><th><a href="turf.html#var/lighting_corner_NE">lighting_corner_NE</a></th><td>Lighting Corner datums.</td></tr>
+            <tr><th><a href="turf.html#var/lighting_object">lighting_object</a></th><td>Our lighting object.</td></tr>
+            <tr><th><a href="turf.html#var/opacity_sources">opacity_sources</a></th><td>Lazylist of movable atoms providing opacity sources.</td></tr>
+            <tr><th><a href="turf.html#var/smooth_underlay">smooth_underlay</a></th><td>The underlay generated and applied when a chisel makes a turf diagonal. Stored here for removal on un-diagonalizing</td></tr>
+            <tr><th><a href="turf.html#var/to_be_destroyed">to_be_destroyed</a></th><td>Used for fire, if a melting temperature was reached, it will be destroyed</td></tr>
+            <tr><th><a href="turf.html#var/virtual_z">virtual_z</a></th><td>ID of the virtual level we're in</td></tr>
+            <tr><th><a href="turf.html#var/virtual_z_translation">virtual_z_translation</a></th><td>Translation of the virtual z to a virtual level</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="turf.html#proc/Initialize">Initialize</a></th><td>Turf Initialize</td></tr>
+            <tr><th><a href="turf.html#proc/add_opacity_source">add_opacity_source</a></th><td>Proc to add movable sources of opacity on the turf and let it handle lighting code.</td></tr>
+            <tr><th><a href="turf.html#proc/clear_signal_refs">clear_signal_refs</a></th><td>WARNING WARNING
+Turfs DO NOT lose their signals when they get replaced, REMEMBER THIS
+It's possible because turfs are fucked, and if you have one in a list and it's replaced with another one, the list ref points to the new turf
+We do it because moving signals over was needlessly expensive, and bloated a very commonly used bit of code</td></tr>
+            <tr><th><a href="turf.html#proc/consider_pressure_difference">consider_pressure_difference</a></th><td>SPACEWIND</td></tr>
+            <tr><th><a href="turf.html#proc/expose_reagents">expose_reagents</a></th><td>Handles exposing a turf to reagents.</td></tr>
+            <tr><th><a href="turf.html#proc/fromShuttleMove">fromShuttleMove</a></th><td>Base procs</td></tr>
+            <tr><th><a href="turf.html#proc/is_blocked_turf">is_blocked_turf</a></th><td>Check whether the specified turf is blocked by something dense inside it with respect to a specific atom.</td></tr>
+            <tr><th><a href="turf.html#proc/process_cell">process_cell</a></th><td>SIMULATION</td></tr>
+            <tr><th><a href="turf.html#proc/recalculate_directional_opacity">recalculate_directional_opacity</a></th><td>Calculate on which directions this turfs block view.</td></tr>
+            <tr><th><a href="turf.html#proc/remove_opacity_source">remove_opacity_source</a></th><td>Proc to remove movable sources of opacity on the turf and let it handle lighting code.</td></tr>
+            <tr><th><a href="turf.html#proc/wash">wash</a></th><td>Called when this turf is being washed. Washing a turf will also wash any mopable floor decals</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/directional_opacity"><aside class="declaration">var </aside>directional_opacity
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L63">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 63"/></a></h3>
+        <p>Which directions does this turf block the vision of, taking into account both the turf's opacity and the movable opacity_sources.</p><h3 id="var/dynamic_lumcount"><aside class="declaration">var </aside>dynamic_lumcount
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L47">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 47"/></a></h3>
+        <p>Lumcount added by sources other than lighting datum objects, such as the overlay lighting component.</p><h3 id="var/fixed_underlay"><aside class="declaration">var </aside>fixed_underlay
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L41">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 41"/></a></h3>
+        <p>Icon-smoothing variable to map a diagonal wall corner with a fixed underlay.</p><h3 id="var/initial_temperature"><aside class="declaration">var </aside>initial_temperature
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 17"/></a></h3>
+        <p>How hot the turf is, in kelvin</p><h3 id="var/lighting_corner_NE"><aside class="declaration">var </aside>lighting_corner_NE
+            <aside>&ndash; /tmp/<a href="datum.html">datum</a>/lighting_corner</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L56">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 56"/></a></h3>
+        <p>Lighting Corner datums.</p><h3 id="var/lighting_object"><aside class="declaration">var </aside>lighting_object
+            <aside>&ndash; /tmp/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/<a href="atom/movable/lighting_object.html">lighting_object</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L54">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 54"/></a></h3>
+        <p>Our lighting object.</p><h3 id="var/opacity_sources"><aside class="declaration">var </aside>opacity_sources
+            <aside>&ndash; /list/atom/movable</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L65">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 65"/></a></h3>
+        <p>Lazylist of movable atoms providing opacity sources.</p><h3 id="var/smooth_underlay"><aside class="declaration">var </aside>smooth_underlay
+            <aside>&ndash; /mutable_appearance</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L44">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 44"/></a></h3>
+        <p>The underlay generated and applied when a chisel makes a turf diagonal. Stored here for removal on un-diagonalizing</p><h3 id="var/to_be_destroyed"><aside class="declaration">var </aside>to_be_destroyed
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L20">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 20"/></a></h3>
+        <p>Used for fire, if a melting temperature was reached, it will be destroyed</p><h3 id="var/virtual_z"><aside class="declaration">var </aside>virtual_z
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L68">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 68"/></a></h3>
+        <p>ID of the virtual level we're in</p><h3 id="var/virtual_z_translation"><aside class="declaration">var </aside>virtual_z_translation
+            <aside>&ndash; /static/list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L73">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 73"/></a></h3>
+        <p>Translation of the virtual z to a virtual level</p><h2 id="proc">Proc Details</h2><h3 id="proc/Initialize"><aside class="parent"><a title="/atom" href="atom.html#proc/Initialize">&uarr;</a></aside>Initialize<aside>(mapload, inherited_virtual_z) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L84">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 84"/></a></aside>
+        </h3>
+        <p>Turf Initialize</p>
+<p>Doesn't call parent, see <a href="atom.html#proc/Initialize" title="/atom">/atom/proc/Initialize</a></p><h3 id="proc/add_opacity_source"><aside class="declaration">proc </aside>add_opacity_source<aside>(/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/new_source) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/lighting/lighting_turf.dm#L64">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;lighting&#x2F;lighting_turf.dm 64"/></a></aside>
+        </h3>
+        <p>Proc to add movable sources of opacity on the turf and let it handle lighting code.</p><h3 id="proc/clear_signal_refs"><aside class="parent"><a title="/datum" href="datum.html#proc/clear_signal_refs">&uarr;</a></aside>clear_signal_refs<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L195">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 195"/></a></aside>
+        </h3>
+        <p>WARNING WARNING
+Turfs DO NOT lose their signals when they get replaced, REMEMBER THIS
+It's possible because turfs are fucked, and if you have one in a list and it's replaced with another one, the list ref points to the new turf
+We do it because moving signals over was needlessly expensive, and bloated a very commonly used bit of code</p><h3 id="proc/consider_pressure_difference"><aside class="declaration">proc </aside>consider_pressure_difference<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/atmospherics/environmental/LINDA_turf_tile.dm#L218">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;atmospherics&#x2F;environmental&#x2F;LINDA_turf_tile.dm 218"/></a></aside>
+        </h3>
+        <p>SPACEWIND</p><h3 id="proc/expose_reagents"><aside class="parent"><a title="/atom" href="atom.html#proc/expose_reagents">&uarr;</a></aside>expose_reagents<aside>(/list/reagents, /<a href="datum.html">datum</a>/<a href="datum/reagents.html">reagents</a>/source, method, volume_modifier, show_message) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L631">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 631"/></a></aside>
+        </h3>
+        <p>Handles exposing a turf to reagents.</p><h3 id="proc/fromShuttleMove"><aside class="declaration">proc </aside>fromShuttleMove<aside>(/<a href="turf.html">turf</a>/newT, move_mode) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/shuttle/on_move.dm#L9">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;shuttle&#x2F;on_move.dm 9"/></a></aside>
+        </h3>
+        <p>Base procs</p><h3 id="proc/is_blocked_turf"><aside class="declaration">proc </aside>is_blocked_turf<aside>(exclude_mobs, source_atom, /list/ignore_atoms) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L223">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 223"/></a></aside>
+        </h3>
+        <p>Check whether the specified turf is blocked by something dense inside it with respect to a specific atom.</p>
+<p>Returns truthy value TURF_BLOCKED_TURF_DENSE if the turf is blocked because the turf itself is dense.
+Returns truthy value TURF_BLOCKED_CONTENT_DENSE if one of the turf's contents is dense and would block
+a source atom's movement.
+Returns falsey value TURF_NOT_BLOCKED if the turf is not blocked.</p>
+<p>Arguments:</p>
+<ul>
+<li>exclude_mobs - If TRUE, ignores dense mobs on the turf.</li>
+<li>source_atom - If this is not null, will check whether any contents on the turf can block this atom specifically. Also ignores itself on the turf.</li>
+<li>ignore_atoms - Check will ignore any atoms in this list. Useful to prevent an atom from blocking itself on the turf.</li>
+</ul><h3 id="proc/process_cell"><aside class="declaration">proc </aside>process_cell<aside>(fire_count) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/atmospherics/environmental/LINDA_turf_tile.dm#L191">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;atmospherics&#x2F;environmental&#x2F;LINDA_turf_tile.dm 191"/></a></aside>
+        </h3>
+        <p>SIMULATION</p><h3 id="proc/recalculate_directional_opacity"><aside class="declaration">proc </aside>recalculate_directional_opacity<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/lighting/lighting_turf.dm#L80">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;lighting&#x2F;lighting_turf.dm 80"/></a></aside>
+        </h3>
+        <p>Calculate on which directions this turfs block view.</p><h3 id="proc/remove_opacity_source"><aside class="declaration">proc </aside>remove_opacity_source<aside>(/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/old_source) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/lighting/lighting_turf.dm#L72">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;lighting&#x2F;lighting_turf.dm 72"/></a></aside>
+        </h3>
+        <p>Proc to remove movable sources of opacity on the turf and let it handle lighting code.</p><h3 id="proc/wash"><aside class="parent"><a title="/atom" href="atom.html#proc/wash">&uarr;</a></aside>wash<aside>(clean_types) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/game/turfs/turf.dm#L642">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;turfs&#x2F;turf.dm 642"/></a></aside>
+        </h3>
+        <p>Called when this turf is being washed. Washing a turf will also wash any mopable floor decals</p></main>
+<footer>
+    shiptest.dme
+    <a href="https://github.com/Sector-Echo-13-Team/Echo13/tree/032fb85002b9bedff20154818a8f7ddfc76ebd2e">032fb85</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

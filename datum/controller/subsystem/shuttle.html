@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;controller&#x2F;subsystem&#x2F;shuttle - Sector Echo 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Sector Echo 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/controller/subsystem/shuttle.html#var">Var Details</a> - <a href="datum/controller/subsystem/shuttle.html#proc">Proc Details</a></header>
+<main>
+<h1>shuttle <aside>/<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/<a href="datum/controller/subsystem/shuttle.html">shuttle</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L3">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 3"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/jump_completion_time">jump_completion_time</a></th><td>Time taken for a bluespace jump to complete after it initiates (in deciseconds)</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/jump_mode">jump_mode</a></th><td>Current state of the jump</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/jump_request_time">jump_request_time</a></th><td>Time taken for bluespace jump to begin after it is requested (in deciseconds)</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/jump_timer">jump_timer</a></th><td>Timer ID of the timer used for telling which stage of an endround &quot;jump&quot; the ships are in</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/lockdown">lockdown</a></th><td>Stops ALL shuttles from being able to move</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/mobile">mobile</a></th><td>List of all instantiated <a href="obj/item.html" title="/obj/item">/obj/item/docking_port/mobile</a> in existence</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/ordernum">ordernum</a></th><td>Order number given to next cargo order</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/stationary">stationary</a></th><td>List of all instantiated <a href="obj/item.html" title="/obj/item">/obj/item/docking_port/stationary</a> in existence</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/supplyBlocked">supplyBlocked</a></th><td>Whether express consoles are blocked from ordering anything or not</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/supply_packs">supply_packs</a></th><td>List of all singleton supply pack instances</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/transit">transit</a></th><td>List of all instantiated <a href="obj/item.html" title="/obj/item">/obj/item/docking_port/stationary/transit</a> in existence</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/transit_request_failures">transit_request_failures</a></th><td>Assoc list of an object that has attempted transit to the amount of times it has failed to do so</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#var/transit_requesters">transit_requesters</a></th><td>List of all shuttles queued for transit</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#proc/action_load">action_load</a></th><td>This proc loads a shuttle from a specified template. If no destination port is specified, the shuttle will be
+spawned at a generated transit doc. Doing this is how most ships are loaded.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#proc/cancel_jump">cancel_jump</a></th><td>Cancels a currently requested bluespace jump. Can only be done after the jump has been requested but before the jump has actually begun.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#proc/initiate_jump">initiate_jump</a></th><td>Initiates a bluespace jump, ending the round after a delay of jump_completion_time deciseconds. This cannot be interrupted by conventional means.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#proc/load_template">load_template</a></th><td>This proc is THE proc that loads a shuttle from a specified template. Anything else should go through this
+in order to spawn a new shuttle.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#proc/replace_shuttle">replace_shuttle</a></th><td>This proc replaces the given shuttle with a fresh new one spawned from a template.
+spawned at a generated transit doc. Doing this is how most ships are loaded.</td></tr>
+            <tr><th><a href="datum/controller/subsystem/shuttle.html#proc/request_jump">request_jump</a></th><td>Requests a bluespace jump, which, after jump_request_time deciseconds, will initiate a bluespace jump.</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/jump_completion_time"><aside class="declaration">var </aside>jump_completion_time
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L29">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 29"/></a></h3>
+        <p>Time taken for a bluespace jump to complete after it initiates (in deciseconds)</p><h3 id="var/jump_mode"><aside class="declaration">var </aside>jump_mode
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L25">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 25"/></a></h3>
+        <p>Current state of the jump</p><h3 id="var/jump_request_time"><aside class="declaration">var </aside>jump_request_time
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L27">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 27"/></a></h3>
+        <p>Time taken for bluespace jump to begin after it is requested (in deciseconds)</p><h3 id="var/jump_timer"><aside class="declaration">var </aside>jump_timer
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L23">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 23"/></a></h3>
+        <p>Timer ID of the timer used for telling which stage of an endround &quot;jump&quot; the ships are in</p><h3 id="var/lockdown"><aside class="declaration">var </aside>lockdown
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 39"/></a></h3>
+        <p>Stops ALL shuttles from being able to move</p><h3 id="var/mobile"><aside class="declaration">var </aside>mobile
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 11"/></a></h3>
+        <p>List of all instantiated <a href="obj/item.html" title="/obj/item">/obj/item/docking_port/mobile</a> in existence</p><h3 id="var/ordernum"><aside class="declaration">var </aside>ordernum
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L34">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 34"/></a></h3>
+        <p>Order number given to next cargo order</p><h3 id="var/stationary"><aside class="declaration">var </aside>stationary
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L13">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 13"/></a></h3>
+        <p>List of all instantiated <a href="obj/item.html" title="/obj/item">/obj/item/docking_port/stationary</a> in existence</p><h3 id="var/supplyBlocked"><aside class="declaration">var </aside>supplyBlocked
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L32">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 32"/></a></h3>
+        <p>Whether express consoles are blocked from ordering anything or not</p><h3 id="var/supply_packs"><aside class="declaration">var </aside>supply_packs
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 36"/></a></h3>
+        <p>List of all singleton supply pack instances</p><h3 id="var/transit"><aside class="declaration">var </aside>transit
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L15">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 15"/></a></h3>
+        <p>List of all instantiated <a href="obj/item.html" title="/obj/item">/obj/item/docking_port/stationary/transit</a> in existence</p><h3 id="var/transit_request_failures"><aside class="declaration">var </aside>transit_request_failures
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L20">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 20"/></a></h3>
+        <p>Assoc list of an object that has attempted transit to the amount of times it has failed to do so</p><h3 id="var/transit_requesters"><aside class="declaration">var </aside>transit_requesters
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L18">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 18"/></a></h3>
+        <p>List of all shuttles queued for transit</p><h2 id="proc">Proc Details</h2><h3 id="proc/action_load"><aside class="declaration">proc </aside>action_load<aside>(/<a href="datum.html">datum</a>/<a href="datum/map_template.html">map_template</a>/shuttle/loading_template, /<a href="datum.html">datum</a>/<a href="datum/overmap.html">overmap</a>/<a href="datum/overmap/ship.html">ship</a>/<a href="datum/overmap/ship/controlled.html">controlled</a>/parent, /<a href="obj.html">obj</a>/<a href="obj/docking_port.html">docking_port</a>/stationary/destination_port) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L250">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 250"/></a></aside>
+        </h3>
+        <p>This proc loads a shuttle from a specified template. If no destination port is specified, the shuttle will be
+spawned at a generated transit doc. Doing this is how most ships are loaded.</p>
+<ul>
+<li>loading_template - The shuttle map template to load. Can NOT be null.</li>
+<li>destination_port - The port the newly loaded shuttle will be sent to after being fully spawned in. If you want to have a transit dock be created, use [proc/load_template] instead. Should NOT be null.</li>
+</ul><h3 id="proc/cancel_jump"><aside class="declaration">proc </aside>cancel_jump<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L77">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 77"/></a></aside>
+        </h3>
+        <p>Cancels a currently requested bluespace jump. Can only be done after the jump has been requested but before the jump has actually begun.</p><h3 id="proc/initiate_jump"><aside class="declaration">proc </aside>initiate_jump<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L85">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 85"/></a></aside>
+        </h3>
+        <p>Initiates a bluespace jump, ending the round after a delay of jump_completion_time deciseconds. This cannot be interrupted by conventional means.</p><h3 id="proc/load_template"><aside class="declaration">proc </aside>load_template<aside>(/<a href="datum.html">datum</a>/<a href="datum/map_template.html">map_template</a>/shuttle/template, /<a href="datum.html">datum</a>/<a href="datum/overmap.html">overmap</a>/<a href="datum/overmap/ship.html">ship</a>/<a href="datum/overmap/ship/controlled.html">controlled</a>/parent, spawn_transit) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L304">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 304"/></a></aside>
+        </h3>
+        <p>This proc is THE proc that loads a shuttle from a specified template. Anything else should go through this
+in order to spawn a new shuttle.</p>
+<ul>
+<li>template - The shuttle map template to load. Can NOT be null.</li>
+<li>spawn_transit - Whether or not to send the new shuttle to a newly-generated transit dock after loading.</li>
+</ul><h3 id="proc/replace_shuttle"><aside class="declaration">proc </aside>replace_shuttle<aside>(/<a href="obj.html">obj</a>/<a href="obj/docking_port.html">docking_port</a>/<a href="obj/docking_port/mobile.html">mobile</a>/to_replace, /<a href="datum.html">datum</a>/<a href="datum/overmap.html">overmap</a>/<a href="datum/overmap/ship.html">ship</a>/<a href="datum/overmap/ship/controlled.html">controlled</a>/parent, /<a href="datum.html">datum</a>/<a href="datum/map_template.html">map_template</a>/shuttle/replacement) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L272">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 272"/></a></aside>
+        </h3>
+        <p>This proc replaces the given shuttle with a fresh new one spawned from a template.
+spawned at a generated transit doc. Doing this is how most ships are loaded.</p>
+<p>Hopefully this doesn't need to be used, it's a last resort for admin-coders at best,
+but I wanted to preserve the functionality of old action_load() in case it was needed.</p>
+<ul>
+<li>to_replace - The shuttle to replace. Should NOT be null.</li>
+<li>replacement - The shuttle map template to load in place of the old shuttle. Can NOT be null.</li>
+</ul><h3 id="proc/request_jump"><aside class="declaration">proc </aside>request_jump<aside>(modifier) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/controllers/subsystem/shuttle.dm#L71">
+        <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;shuttle.dm 71"/></a></aside>
+        </h3>
+        <p>Requests a bluespace jump, which, after jump_request_time deciseconds, will initiate a bluespace jump.</p></main>
+<footer>
+    shiptest.dme
+    <a href="https://github.com/Sector-Echo-13-Team/Echo13/tree/032fb85002b9bedff20154818a8f7ddfc76ebd2e">032fb85</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

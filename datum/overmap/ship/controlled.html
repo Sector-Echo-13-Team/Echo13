@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;overmap&#x2F;ship&#x2F;controlled - Sector Echo 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Sector Echo 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/overmap/ship/controlled.html#var">Var Details</a> - <a href="datum/overmap/ship/controlled.html#proc">Proc Details</a></header>
+<main>
+<h1>Simulated overmap ship <aside>/<a href="datum.html">datum</a>/<a href="datum/overmap.html">overmap</a>/<a href="datum/overmap/ship.html">ship</a>/<a href="datum/overmap/ship/controlled.html">controlled</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 11"/></a></h1>
+
+<p>A ship that corresponds to an actual, physical shuttle.</p>
+<p>Can be docked to any other overmap datum that has a valid docking process.</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/avg_fuel_amnt">avg_fuel_amnt</a></th><td>Average fuel fullness percentage</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/est_thrust">est_thrust</a></th><td>Vessel estimated thrust</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/helm_locked">helm_locked</a></th><td>Is helm access for this ship locked</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/helms">helms</a></th><td>All helms connected to this ship</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/job_slot_adjustment_cooldown">job_slot_adjustment_cooldown</a></th><td>Time that next job slot change can occur</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/job_slots">job_slots</a></th><td>Assoc list of remaining open job slots (job = remaining slots)</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/join_allowed">join_allowed</a></th><td>Whether or not new players are allowed to join the ship</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/manifest">manifest</a></th><td>Manifest list of people on the ship</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/mass">mass</a></th><td>Vessel approximate mass</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/memo">memo</a></th><td>Short memo of the ship shown to new joins</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/rename_cooldown">rename_cooldown</a></th><td>Cooldown until the ship can be renamed again</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/ship_account">ship_account</a></th><td>Shipwide bank account used for cargo consoles and bounty payouts.</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/shipkey">shipkey</a></th><td>The shipkey for this ship</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/shuttle_port">shuttle_port</a></th><td>The docking port of the linked shuttle. To add a port after creating a controlled ship datum, use <a href="datum/overmap/ship/controlled.html#proc/connect_new_shuttle_port" title="/datum/overmap/ship/controlled">/datum/overmap/ship/controlled/proc/connect_new_shuttle_port</a>.</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#var/source_template">source_template</a></th><td>The map template the shuttle was spawned from, if it was indeed created from a template. CAN BE NULL (ex. custom-built ships).</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#proc/Initialize">Initialize</a></th><td>creation_template - The template used to create the ship.
+target_port - The port to dock the new ship to.</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#proc/calculate_avg_fuel">calculate_avg_fuel</a></th><td>Calculates the average fuel fullness of all engines.</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#proc/calculate_mass">calculate_mass</a></th><td>Calculates the mass based on the amount of turfs in the shuttle's areas</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#proc/connect_new_shuttle_port">connect_new_shuttle_port</a></th><td>Connects a new shuttle port to the ship datum. Should be used very shortly after the ship is created, if at all.
+Used to connect the shuttle port to a ship datum that was created without a template.</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#proc/dock_in_empty_space">dock_in_empty_space</a></th><td>Docks to an empty dynamic encounter. Used for intership interaction, structural modifications, and such</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#proc/manifest_inject">manifest_inject</a></th><td>Bastardized version of GLOB.manifest.manifest_inject, but used per ship</td></tr>
+            <tr><th><a href="datum/overmap/ship/controlled.html#proc/refresh_engines">refresh_engines</a></th><td>Just double checks all the engines on the shuttle</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/avg_fuel_amnt"><aside class="declaration">var </aside>avg_fuel_amnt
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L18">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 18"/></a></h3>
+        <p>Average fuel fullness percentage</p><h3 id="var/est_thrust"><aside class="declaration">var </aside>est_thrust
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L16">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 16"/></a></h3>
+        <p>Vessel estimated thrust</p><h3 id="var/helm_locked"><aside class="declaration">var </aside>helm_locked
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L38">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 38"/></a></h3>
+        <p>Is helm access for this ship locked</p><h3 id="var/helms"><aside class="declaration">var </aside>helms
+            <aside>&ndash; /list/obj/machinery/computer/helm</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L36">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 36"/></a></h3>
+        <p>All helms connected to this ship</p><h3 id="var/job_slot_adjustment_cooldown"><aside class="declaration">var </aside>job_slot_adjustment_cooldown
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L40">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 40"/></a></h3>
+        <p>Time that next job slot change can occur</p><h3 id="var/job_slots"><aside class="declaration">var </aside>job_slots
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L30">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 30"/></a></h3>
+        <p>Assoc list of remaining open job slots (job = remaining slots)</p><h3 id="var/join_allowed"><aside class="declaration">var </aside>join_allowed
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L42">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 42"/></a></h3>
+        <p>Whether or not new players are allowed to join the ship</p><h3 id="var/manifest"><aside class="declaration">var </aside>manifest
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L32">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 32"/></a></h3>
+        <p>Manifest list of people on the ship</p><h3 id="var/mass"><aside class="declaration">var </aside>mass
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L22">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 22"/></a></h3>
+        <p>Vessel approximate mass</p><h3 id="var/memo"><aside class="declaration">var </aside>memo
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L44">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 44"/></a></h3>
+        <p>Short memo of the ship shown to new joins</p><h3 id="var/rename_cooldown"><aside class="declaration">var </aside>rename_cooldown
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L20">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 20"/></a></h3>
+        <p>Cooldown until the ship can be renamed again</p><h3 id="var/ship_account"><aside class="declaration">var </aside>ship_account
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/bank_account.html">bank_account</a>/ship</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L49">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 49"/></a></h3>
+        <p>Shipwide bank account used for cargo consoles and bounty payouts.</p><h3 id="var/shipkey"><aside class="declaration">var </aside>shipkey
+            <aside>&ndash; /<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/key/ship</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L34">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 34"/></a></h3>
+        <p>The shipkey for this ship</p><h3 id="var/shuttle_port"><aside class="declaration">var </aside>shuttle_port
+            <aside>&ndash; /<a href="obj.html">obj</a>/<a href="obj/docking_port.html">docking_port</a>/<a href="obj/docking_port/mobile.html">mobile</a></aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L25">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 25"/></a></h3>
+        <p>The docking port of the linked shuttle. To add a port after creating a controlled ship datum, use <a href="datum/overmap/ship/controlled.html#proc/connect_new_shuttle_port" title="/datum/overmap/ship/controlled">/datum/overmap/ship/controlled/proc/connect_new_shuttle_port</a>.</p><h3 id="var/source_template"><aside class="declaration">var </aside>source_template
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/map_template.html">map_template</a>/shuttle</aside>
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L27">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 27"/></a></h3>
+        <p>The map template the shuttle was spawned from, if it was indeed created from a template. CAN BE NULL (ex. custom-built ships).</p><h2 id="proc">Proc Details</h2><h3 id="proc/Initialize"><aside class="parent"><a title="/datum/overmap" href="datum/overmap.html#proc/Initialize">&uarr;</a></aside>Initialize<aside>(position, /<a href="datum.html">datum</a>/<a href="datum/map_template.html">map_template</a>/shuttle/creation_template, create_shuttle) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L69">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 69"/></a></aside>
+        </h3>
+        <p>creation_template - The template used to create the ship.
+target_port - The port to dock the new ship to.</p><h3 id="proc/calculate_avg_fuel"><aside class="declaration">proc </aside>calculate_avg_fuel<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L224">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 224"/></a></aside>
+        </h3>
+        <p>Calculates the average fuel fullness of all engines.</p><h3 id="proc/calculate_mass"><aside class="declaration">proc </aside>calculate_mass<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L214">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 214"/></a></aside>
+        </h3>
+        <p>Calculates the mass based on the amount of turfs in the shuttle's areas</p><h3 id="proc/connect_new_shuttle_port"><aside class="declaration">proc </aside>connect_new_shuttle_port<aside>(/<a href="obj.html">obj</a>/<a href="obj/docking_port.html">docking_port</a>/<a href="obj/docking_port/mobile.html">mobile</a>/new_port) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L259">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 259"/></a></aside>
+        </h3>
+        <p>Connects a new shuttle port to the ship datum. Should be used very shortly after the ship is created, if at all.
+Used to connect the shuttle port to a ship datum that was created without a template.</p>
+<ul>
+<li>new_port - The new shuttle port to connect to the ship.</li>
+</ul><h3 id="proc/dock_in_empty_space"><aside class="declaration">proc </aside>dock_in_empty_space<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L173">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 173"/></a></aside>
+        </h3>
+        <p>Docks to an empty dynamic encounter. Used for intership interaction, structural modifications, and such</p><h3 id="proc/manifest_inject"><aside class="declaration">proc </aside>manifest_inject<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/H, /<a href="client.html">client</a>/C, /<a href="datum.html">datum</a>/<a href="datum/job.html">job</a>/human_job) 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L249">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 249"/></a></aside>
+        </h3>
+        <p>Bastardized version of GLOB.manifest.manifest_inject, but used per ship</p>
+<ul>
+<li>H - Human mob to add to the manifest</li>
+<li>C - client of the mob to add to the manifest</li>
+<li>human_job - Job of the human mob to add to the manifest</li>
+</ul><h3 id="proc/refresh_engines"><aside class="declaration">proc </aside>refresh_engines<aside>() 
+        
+    
+            <a href="https://github.com/Sector-Echo-13-Team/Echo13/blob/032fb85002b9bedff20154818a8f7ddfc76ebd2e/code/modules/overmap/ships/controlled_ship_datum.dm#L203">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;overmap&#x2F;ships&#x2F;controlled_ship_datum.dm 203"/></a></aside>
+        </h3>
+        <p>Just double checks all the engines on the shuttle</p></main>
+<footer>
+    shiptest.dme
+    <a href="https://github.com/Sector-Echo-13-Team/Echo13/tree/032fb85002b9bedff20154818a8f7ddfc76ebd2e">032fb85</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>
