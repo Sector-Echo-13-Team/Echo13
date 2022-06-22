@@ -48,7 +48,11 @@
 							)
 
 /obj/machinery/autolathe/Initialize()
+<<<<<<< HEAD
 	AddComponent(/datum/component/material_container, SSmaterials.materialtypes_by_category[MAT_CATEGORY_RIGID], 0, TRUE, null, null, CALLBACK(src, .proc/AfterMaterialInsert))
+=======
+	AddComponent(/datum/component/material_container,list(/datum/material/iron, /datum/material/glass, /datum/material/plastic, /datum/material/silver, /datum/material/gold, /datum/material/plasma, /datum/material/uranium, /datum/material/titanium), 0, TRUE, null, null, CALLBACK(src, .proc/AfterMaterialInsert))
+>>>>>>> 3070f3d0f6 (Autolathe revamp: Material eject button (+bugfixes) (#1246))
 	. = ..()
 
 	wires = new /datum/wires/autolathe(src)
@@ -83,6 +87,7 @@
 
 /obj/machinery/autolathe/on_deconstruction()
 	var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
+<<<<<<< HEAD
 	materials.retrieve_all()
 
 /obj/machinery/autolathe/attackby(obj/item/O, mob/user, params)
@@ -128,6 +133,27 @@
 		use_power(MINERAL_MATERIAL_AMOUNT / 10)
 	else if(custom_materials && custom_materials.len && custom_materials[SSmaterials.GetMaterialRef(/datum/material/glass)])
 		flick("autolathe_r",src)//plays glass insertion animation by default otherwise
+=======
+	data["materialtotal"] = materials.total_amount
+	data["materialsmax"] = materials.max_amount
+	data["categories"] = categories
+	data["designs"] = list()
+	data["active"] = busy
+	data["hasDisk"] = d_disk ? TRUE : FALSE
+	for(var/mat_id in materials.materials)
+		var/datum/material/M = mat_id
+		var/mineral_count = materials.materials[mat_id]
+		var/sheets_count = CEILING(mineral_count / MINERAL_MATERIAL_AMOUNT, 0.1)
+		var/list/material_data = list(
+			name = M.name,
+			mineral_amount = mineral_count,
+			sheets_amount = sheets_count,
+			matcolour = M.color,
+		)
+		data["materials"] += list(material_data)
+	if(selected_category != "None" && !length(matching_designs))
+		data["designs"] = handle_designs(stored_research.researched_designs, TRUE)
+>>>>>>> 3070f3d0f6 (Autolathe revamp: Material eject button (+bugfixes) (#1246))
 	else
 		flick("autolathe_o",src)//plays metal insertion animation
 
@@ -149,6 +175,34 @@
 
 		if(href_list["make"])
 
+<<<<<<< HEAD
+=======
+		for(var/v in stored_research.researched_designs)
+			var/datum/design/D = SSresearch.techweb_design_by_id(v)
+			if(findtext(D.name,params["to_search"]))
+				matching_designs.Add(D)
+		. = TRUE
+	if(action == "diskEject")
+		eject(usr)
+
+	if(action == "materialEject")
+		var/material_name = params["materialName"]
+		var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
+		var/amount = text2num(params["amount"])
+		if(amount <= 0 || amount > 50)
+			return
+
+		for(var/mat in materials.materials)
+			var/datum/material/M = mat
+			if("[M]" == material_name)
+				stack_trace("Found [M] for [material_name], attempting to eject [amount]")
+				materials.retrieve_sheets(amount, M, get_turf(src))
+				. = TRUE
+				break
+
+	if(action == "make")
+		if (!busy)
+>>>>>>> 3070f3d0f6 (Autolathe revamp: Material eject button (+bugfixes) (#1246))
 			/////////////////
 			//href protection
 			being_built = stored_research.isDesignResearchedID(href_list["make"])
