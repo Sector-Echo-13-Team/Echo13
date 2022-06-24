@@ -212,6 +212,37 @@
 	seed = /obj/item/seeds/lavaland/cactus
 	wine_power = 50
 
+<<<<<<< HEAD
+=======
+/obj/item/reagent_containers/food/snacks/grown/ash_flora/whitesands
+	icon = 'whitesands/icons/obj/lavaland/newlavalandplants.dmi'
+
+/obj/item/reagent_containers/food/snacks/grown/ash_flora/whitesands/fern
+	name = "fern leaf"
+	desc = "A leaf from a cave fern."
+	icon_state = "fern"
+	seed = /obj/item/seeds/lavaland/whitesands/fern
+	wine_power = 10
+
+/obj/item/reagent_containers/food/snacks/grown/ash_flora/whitesands/fireblossom
+	name = "fire blossom"
+	desc = "A flower from a fire blossom."
+	icon_state = "fireblossom"
+	slot_flags = ITEM_SLOT_HEAD
+	seed = /obj/item/seeds/lavaland/whitesands/fireblossom
+	wine_power = 40
+
+/obj/item/reagent_containers/food/snacks/grown/ash_flora/whitesands/puce
+	name = "Pucestal Crystal"
+	desc = "A crystal from a pucestal growth."
+	icon_state = "puce"
+	seed = /obj/item/seeds/lavaland/whitesands/puce
+	wine_power = 0		// It's a crystal
+
+/obj/item/reagent_containers/food/snacks/grown/ash_flora/whitesands/puce/canconsume(mob/eater, mob/user)
+	return FALSE
+
+>>>>>>> d4b089f4a8 (fireblossoms are equippable now (#1233))
 //SEEDS
 
 /obj/item/seeds/lavaland
