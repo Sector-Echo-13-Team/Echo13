@@ -132,3 +132,38 @@
 	satchel = /obj/item/storage/backpack/cultpack
 
 	chameleon_extras = /obj/item/stamp/chap
+<<<<<<< HEAD
+=======
+
+/datum/outfit/job/chaplain/monk
+	name = "Chaplain (Monk)"
+	suit = /obj/item/clothing/suit/hooded/chaplainsuit/monkhabit
+	l_hand = /obj/item/storage/book/bible
+
+/datum/outfit/job/chaplain/imam
+	name = "Chaplain (Imam)"
+	head = /obj/item/clothing/head/taqiyahwhite
+	l_hand = /obj/item/storage/book/bible/koran
+
+/datum/outfit/job/chaplain/rabbi
+	name = "Chaplain (Rabbi)"
+	head = /obj/item/clothing/head/kippah
+	l_hand = /obj/item/storage/book/bible/torah
+
+/datum/outfit/job/chaplain/roumain
+	name = "Hunter Montagne (Saint-Roumain Militia)"
+
+	uniform = /obj/item/clothing/under/suit/roumain
+	alt_uniform = null
+	shoes = /obj/item/clothing/shoes/workboots/mining
+	suit = /obj/item/clothing/suit/armor/hos/roumain/montagne
+
+	head = /obj/item/clothing/head/HoS/cowboy/montagne
+	gloves = null
+	id = /obj/item/card/id/captains_spare
+
+	backpack_contents = list(
+		/obj/item/stamp/chap = 1,
+		/obj/item/melee/classic_baton/telescopic=1
+		)
+>>>>>>> 7c32924c10 (Saint-Roumain Militia  (#973))

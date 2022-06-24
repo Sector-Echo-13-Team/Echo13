@@ -152,3 +152,38 @@ Assistant
 	uniform = /obj/item/clothing/under/rank/prisoner
 	shoes = /obj/item/clothing/shoes/sneakers/orange
 	accessory = /obj/item/clothing/accessory/armband/deputy
+<<<<<<< HEAD
+=======
+
+/datum/outfit/job/assistant/waiter
+	name = "Assistant (Waiter)"
+
+	uniform = /obj/item/clothing/under/suit/waiter
+	shoes = /obj/item/clothing/shoes/laceup
+	ears = /obj/item/radio/headset/headset_srv
+	gloves = /obj/item/clothing/gloves/color/white
+
+/datum/outfit/job/assistant/artist
+	name = "Assistant (Artist)"
+
+	uniform = /obj/item/clothing/under/suit/burgundy
+	suit = /obj/item/clothing/suit/toggle/suspenders
+	head = /obj/item/clothing/head/beret/black
+	shoes = /obj/item/clothing/shoes/laceup
+	gloves = /obj/item/clothing/gloves/color/white
+	accessory = /obj/item/clothing/neck/scarf/darkblue
+
+/datum/outfit/job/assistant/waiter/syndicate
+	name = "Assistant (Syndicate Waiter)"
+	uniform = /obj/item/clothing/under/suit/waiter/syndicate
+
+/datum/outfit/job/assistant/roumain
+	name = "Shadow (Saint-Roumain Militia)"
+
+	uniform = /obj/item/clothing/under/suit/roumain
+	alt_uniform = null
+	shoes = /obj/item/clothing/shoes/workboots/mining
+	suit = /obj/item/clothing/suit/armor/roumain/shadow
+
+	head = /obj/item/clothing/head/cowboy/sec/roumain/shadow
+>>>>>>> 7c32924c10 (Saint-Roumain Militia  (#973))

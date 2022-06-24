@@ -116,6 +116,62 @@
 	display_name = "suit, white shirt"
 	path = /obj/item/clothing/under/suit/black
 
+<<<<<<< HEAD
+=======
+/datum/gear/uniform/suit/checkered
+	display_name = "suit, checkered"
+	path = /obj/item/clothing/under/suit/checkered
+
+// Dresses
+/datum/gear/uniform/dress
+	subtype_path = /datum/gear/uniform/dress
+
+/datum/gear/uniform/dress/sailor
+	display_name = "sailor dress"
+	path = /obj/item/clothing/under/dress/sailor
+
+/datum/gear/uniform/dress/striped
+	display_name = "striped dress"
+	path = /obj/item/clothing/under/dress/striped
+
+/datum/gear/uniform/dress/redeveninggown
+	display_name = "red evening gown"
+	path = /obj/item/clothing/under/dress/redeveninggown
+
+/datum/gear/uniform/dress/blacktango
+	display_name = "black tango dress"
+	path = /obj/item/clothing/under/dress/blacktango
+
+/datum/gear/uniform/dress/purpleskirt
+	display_name = "purple skirt"
+	path = /obj/item/clothing/under/dress/skirt/purple
+
+/datum/gear/uniform/dress/blueskirt
+	display_name = "blue skirt"
+	path = /obj/item/clothing/under/dress/skirt/blue
+
+/datum/gear/uniform/dress/redskirt
+	display_name = "red skirt"
+	path = /obj/item/clothing/under/dress/skirt/red
+
+/datum/gear/uniform/dress/blackskirt
+	display_name = "black skirt"
+	path = /obj/item/clothing/under/dress/skirt
+	description = "Actually, it's a black blouse with a salmon skirt. But it's not called that."
+
+/datum/gear/uniform/dress/sundress
+	display_name = "sundress"
+	path = /obj/item/clothing/under/dress/sundress
+
+/datum/gear/uniform/suit/dress_suit
+	display_name = "dress-suit, navy"
+	path = /obj/item/clothing/under/suit/dresssuit
+
+/datum/gear/uniform/suit/dress_suit/skirt
+	display_name = "dress-suitskirt, navy"
+	path = /obj/item/clothing/under/suit/dresssuit/skirt
+
+>>>>>>> 7c32924c10 (Saint-Roumain Militia  (#973))
 //Premium
 /datum/gear/uniform/tacticool
 	display_name = "tacticool turtleneck"
