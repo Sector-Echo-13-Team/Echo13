@@ -407,6 +407,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	READ_FILE(S["feature_ipc_chassis"], features["ipc_chassis"])
 	READ_FILE(S["feature_kepori_feathers"], features["kepori_feathers"])
 	READ_FILE(S["feature_kepori_body_feathers"], features["kepori_body_feathers"])
+<<<<<<< HEAD
+=======
+	READ_FILE(S["feature_kepori_tail_feathers"], features["kepori_tail_feathers"])
+	READ_FILE(S["feature_vox_head_quills"], features["vox_head_quills"])
+	READ_FILE(S["feature_vox_neck_quills"], features["vox_neck_quills"])
+>>>>>>> 3eedc5e727 (Kepori Polishing pt.1 (#1229))
 	READ_FILE(S["alt_titles_preferences"], alt_titles_preferences)
 
 	READ_FILE(S["equipped_gear"], equipped_gear)
@@ -527,6 +533,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["ipc_chassis"]	 = sanitize_inlist(features["ipc_chassis"], GLOB.ipc_chassis_list)
 	features["kepori_feathers"] = sanitize_inlist(features["kepori_feathers"], GLOB.kepori_feathers_list, "Plain")
 	features["kepori_body_feathers"] = sanitize_inlist(features["kepori_body_feathers"], GLOB.kepori_body_feathers_list, "Plain")
+<<<<<<< HEAD
+=======
+	features["kepori_tail_feathers"] = sanitize_inlist(features["kepori_tail_feathers"], GLOB.kepori_tail_feathers_list, "Fan")
+	features["vox_head_quills"] = sanitize_inlist(features["vox_head_quills"], GLOB.vox_head_quills_list, "None")
+	features["vox_neck_quills"] = sanitize_inlist(features["vox_neck_quills"], GLOB.vox_neck_quills_list, "None")
+>>>>>>> 3eedc5e727 (Kepori Polishing pt.1 (#1229))
 	features["flavor_text"]		= sanitize_text(features["flavor_text"], initial(features["flavor_text"]))
 
 	joblessrole	= sanitize_integer(joblessrole, 1, 3, initial(joblessrole))
@@ -598,6 +610,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["feature_ipc_chassis"]			, features["ipc_chassis"])
 	WRITE_FILE(S["feature_kepori_feathers"]	, features["kepori_feathers"])
 	WRITE_FILE(S["feature_kepori_body_feathers"], features["kepori_body_feathers"])
+<<<<<<< HEAD
+=======
+	WRITE_FILE(S["feature_kepori_tail_feathers"], features["kepori_tail_feathers"])
+	WRITE_FILE(S["feature_vox_head_quills"], features["vox_head_quills"])
+	WRITE_FILE(S["feature_vox_neck_quills"], features["vox_neck_quills"])
+>>>>>>> 3eedc5e727 (Kepori Polishing pt.1 (#1229))
 
 	//Alternate job titles
 	WRITE_FILE(S["alt_titles_preferences"]		,alt_titles_preferences)
