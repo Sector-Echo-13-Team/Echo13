@@ -67,12 +67,6 @@
 	SLEEP_CHECK_DEATH(8)
 	return ..()
 
-/mob/living/simple_animal/hostile/asteroid/ice_demon/Life()
-	. = ..()
-	if(!. || target)
-		return
-	adjustHealth(-maxHealth*0.025)
-
 /mob/living/simple_animal/hostile/asteroid/ice_demon/death(gibbed)
 	move_force = MOVE_FORCE_DEFAULT
 	move_resist = MOVE_RESIST_DEFAULT
@@ -156,12 +150,6 @@
 	do_teleport(src, end, 0,  channel=TELEPORT_CHANNEL_BLUESPACE, forced = TRUE)
 	SLEEP_CHECK_DEATH(8)
 	return ..()
-
-/mob/living/simple_animal/hostile/asteroid/ice_demon/Life()
-	. = ..()
-	if(!. || target)
-		return
-	adjustHealth(-maxHealth*0.025)
 
 /mob/living/simple_animal/hostile/asteroid/old_demon/death(gibbed)
 	move_force = MOVE_FORCE_DEFAULT
