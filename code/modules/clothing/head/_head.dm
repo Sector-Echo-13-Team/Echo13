@@ -8,6 +8,12 @@
 	var/blockTracking = 0 //For AI tracking
 	var/can_toggle = null
 	dynamic_hair_suffix = "+generic"
+<<<<<<< HEAD
+=======
+	greyscale_icon_state = "hat"
+	greyscale_colors = list(list(16,26))
+	supports_variations = VOX_VARIATION
+>>>>>>> 34def7f3b6 (adds VOX_VARIATION to many things that should have had them (#1245))
 
 /obj/item/clothing/head/Initialize()
 	. = ..()
