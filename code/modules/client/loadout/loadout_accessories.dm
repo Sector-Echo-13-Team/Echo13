@@ -63,6 +63,16 @@
 	description = "Only the truly insane would wear this around their neck."
 	path = /obj/item/clothing/neck/petcollar
 
+<<<<<<< HEAD
+=======
+/datum/gear/accessory/maidneckpiece
+	display_name = "maid neckpiece"
+	path = /obj/item/clothing/neck/maid
+
+/datum/gear/accessory/gloves
+	subtype_path = /datum/gear/accessory/gloves
+
+>>>>>>> bd7fd8a2b1 (fixes a warning on init (#1278))
 /datum/gear/accessory/gloves/evening
 	display_name = "evening gloves"
 	description = "Excessively fancy elbow-length gloves."
