@@ -20,6 +20,11 @@
 	slot_flags = ITEM_SLOT_BACK	//ERROOOOO
 	resistance_flags = NONE
 	max_integrity = 300
+<<<<<<< HEAD
+=======
+	greyscale_icon_state = "backpack"
+	greyscale_colors = list(list(13, 17), list(12, 17), list(12, 21))
+>>>>>>> c23fdf69df (Kepori Polishing pt. 2 (#1255))
 
 /obj/item/storage/backpack/ComponentInitialize()
 	. = ..()
@@ -218,7 +223,12 @@
 	desc = "A trendy looking satchel."
 	icon_state = "satchel-norm"
 	item_state = "satchel-norm"
+<<<<<<< HEAD
 	species_exception = list(/datum/species/kepori)
+=======
+	greyscale_icon_state = "satchel"
+	greyscale_colors = list(list(11, 12), list(17, 18), list(10, 11))
+>>>>>>> c23fdf69df (Kepori Polishing pt. 2 (#1255))
 
 /obj/item/storage/backpack/satchel/leather
 	name = "leather satchel"
@@ -328,12 +338,94 @@
 /obj/item/storage/backpack/satchel/flat/empty/PopulateContents()
 	return
 
+<<<<<<< HEAD
+=======
+/*
+* Messenger Bag Types from Baystation
+*/
+
+/obj/item/storage/backpack/messenger
+	name = "messenger bag"
+	desc = "A sturdy backpack worn over one shoulder."
+	icon = 'whitesands/icons/obj/storage.dmi'
+	mob_overlay_icon = 'icons/mob/clothing/back.dmi'
+	icon_state = "courierbag"
+	item_state = "courierbag"
+	greyscale_icon_state = "satchel"
+	greyscale_colors = list(list(15, 16), list(19, 13), list(13, 18))
+
+/obj/item/storage/backpack/messenger/chem
+	name = "chemistry messenger bag"
+	desc = "A sterile backpack worn over one shoulder. This one is in Chemistry colors."
+	icon_state = "courierbagchem"
+	item_state = "courierbagchem"
+
+/obj/item/storage/backpack/messenger/med
+	name = "medical messenger bag"
+	desc = "A sterile backpack worn over one shoulder used in medical departments."
+	icon_state = "courierbagmed"
+	item_state = "courierbagmed"
+
+/obj/item/storage/backpack/messenger/para
+	name = "paramedic messenger bag"
+	desc = "A fancy backpack worn over one shoulder. This one is in Paramedic colors."
+	icon_state = "courierbagpara"
+	item_state = "courierbagpara"
+
+/obj/item/storage/backpack/messenger/viro
+	name = "virology messenger bag"
+	desc = "A sterile backpack worn over one shoulder. This one is in Virology colors."
+	icon_state = "courierbagviro"
+	item_state = "courierbagviro"
+
+/obj/item/storage/backpack/messenger/tox
+	name = "science messenger bag"
+	desc = "A backpack worn over one shoulder. Useful for holding science materials."
+	icon_state = "courierbagtox"
+	item_state = "courierbagtox"
+
+/obj/item/storage/backpack/messenger/com
+	name = "captain's messenger bag"
+	desc = "A special backpack worn over one shoulder. This one is made specifically for officers."
+	icon_state = "courierbagcom"
+	item_state = "courierbagcom"
+
+/obj/item/storage/backpack/messenger/engi
+	name = "engineering messenger bag"
+	desc = "A strong backpack worn over one shoulder. This one is designed for Industrial work."
+	icon_state = "courierbagengi"
+	item_state = "courierbagengi"
+
+/obj/item/storage/backpack/messenger/hyd
+	name = "hydroponics messenger bag"
+	desc = "A backpack worn over one shoulder. This one is designed for plant-related work."
+	icon_state = "courierbaghyd"
+	item_state = "courierbaghyd"
+
+/obj/item/storage/backpack/messenger/sec
+	name = "security messenger bag"
+	desc = "A tactical backpack worn over one shoulder. This one is in Security colors."
+	icon_state = "courierbagsec"
+	item_state = "courierbagsec"
+
+/obj/item/storage/backpack/messenger/inteq
+	name = "inteq messenger bag"
+	desc = "A comfortable leather strapped messenger bag worn over one shoulder. This one denotes the wearer as an IRMG operator"
+	icon_state = "courierbaginteq"
+	item_state = "courierbaginteq"
+
+/*
+* Duffelbag Types
+*/
+
+>>>>>>> c23fdf69df (Kepori Polishing pt. 2 (#1255))
 /obj/item/storage/backpack/duffelbag
 	name = "duffel bag"
 	desc = "A large duffel bag for holding extra things."
 	icon_state = "duffel"
 	item_state = "duffel"
 	slowdown = 1
+	greyscale_colors = list(list(21, 11), list(14, 19), list(15, 16))
 
 /obj/item/storage/backpack/duffelbag/ComponentInitialize()
 	. = ..()
