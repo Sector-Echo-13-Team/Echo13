@@ -64,9 +64,13 @@
 	icon_state = "c20r"
 	item_state = "c20r"
 	mag_type = /obj/item/ammo_box/magazine/smgm45
+<<<<<<< HEAD
 	fire_delay = 2
 	burst_size = 2
 	pin = /obj/item/firing_pin/implant/pindicate
+=======
+	fire_rate = 4
+>>>>>>> 79fb4d3baf (Nerfs the C-20r (#1240))
 	can_bayonet = TRUE
 	knife_x_offset = 26
 	knife_y_offset = 12
