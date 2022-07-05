@@ -149,6 +149,33 @@
 
 		if(href_list["make"])
 
+<<<<<<< HEAD
+=======
+		for(var/v in stored_research.researched_designs)
+			var/datum/design/D = SSresearch.techweb_design_by_id(v)
+			if(findtext(D.name,params["to_search"]))
+				matching_designs.Add(D)
+		. = TRUE
+	if(action == "diskEject")
+		eject(usr)
+
+	if(action == "materialEject")
+		var/material_name = params["materialName"]
+		var/datum/component/material_container/materials = GetComponent(/datum/component/material_container)
+		var/amount = text2num(params["amount"])
+		if(amount <= 0 || amount > 50)
+			return
+
+		for(var/mat in materials.materials)
+			var/datum/material/M = mat
+			if("[M]" == material_name)
+				materials.retrieve_sheets(amount, M, get_turf(src))
+				. = TRUE
+				break
+
+	if(action == "make")
+		if (!busy)
+>>>>>>> a68c26669e (Fix several runtimes and potentially baseturfs (#1296))
 			/////////////////
 			//href protection
 			being_built = stored_research.isDesignResearchedID(href_list["make"])
