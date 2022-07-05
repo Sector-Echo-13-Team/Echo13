@@ -702,7 +702,11 @@
 	dir = 4
 	},
 /obj/item/soap,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/patterned/brushed,
+=======
+/turf/open/floor/wood/birch,
+>>>>>>> 9cf16a1628 (Wood riddance (#1302))
 /area/ship/crew)
 "kV" = (
 /obj/structure/cable{
@@ -832,7 +836,12 @@
 /obj/structure/toilet{
 	dir = 4
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/patterned/brushed,
+=======
+/obj/effect/decal/cleanable/vomit/old,
+/turf/open/floor/wood/birch,
+>>>>>>> 9cf16a1628 (Wood riddance (#1302))
 /area/ship/crew)
 "mu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
@@ -960,7 +969,11 @@
 /area/ship/crew/canteen)
 "nn" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/patterned,
+=======
+/turf/open/floor/wood/birch,
+>>>>>>> 9cf16a1628 (Wood riddance (#1302))
 /area/ship/crew)
 "nt" = (
 /obj/effect/turf_decal/solgov{
@@ -986,7 +999,11 @@
 "nL" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+<<<<<<< HEAD
 /turf/open/floor/plasteel/patterned,
+=======
+/turf/open/floor/wood/birch,
+>>>>>>> 9cf16a1628 (Wood riddance (#1302))
 /area/ship/crew)
 "nU" = (
 /obj/machinery/power/apc/auto_name/east,
@@ -1064,7 +1081,11 @@
 /turf/open/floor/carpet/nanoweave/blue,
 /area/ship/bridge)
 "oD" = (
+<<<<<<< HEAD
 /turf/open/floor/plasteel/patterned,
+=======
+/turf/open/floor/wood/birch,
+>>>>>>> 9cf16a1628 (Wood riddance (#1302))
 /area/ship/crew)
 "oK" = (
 /obj/structure/cable{
@@ -1227,7 +1248,11 @@
 	dir = 1;
 	pixel_y = -24
 	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/patterned,
+=======
+/turf/open/floor/wood/birch,
+>>>>>>> 9cf16a1628 (Wood riddance (#1302))
 /area/ship/crew)
 "qn" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,

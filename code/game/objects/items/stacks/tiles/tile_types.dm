@@ -127,6 +127,63 @@
 	item_state = "tile-wood"
 	turf_type = /turf/open/floor/wood
 	resistance_flags = FLAMMABLE
+<<<<<<< HEAD
+=======
+	color = WOOD_COLOR_GENERIC
+	tile_reskin_types = list(
+		/obj/item/stack/tile/wood,
+		/obj/item/stack/tile/wood/mahogany,
+		/obj/item/stack/tile/wood/maple,
+		/obj/item/stack/tile/wood/ebony,
+		/obj/item/stack/tile/wood/walnut,
+		/obj/item/stack/tile/wood/bamboo,
+		/obj/item/stack/tile/wood/birch,
+		/obj/item/stack/tile/wood/yew
+		)
+
+/obj/item/stack/tile/wood/mahogany
+	name = "mahogany wood floor tile"
+	color = WOOD_COLOR_RICH
+	turf_type = /turf/open/floor/wood/mahogany
+	merge_type = /obj/item/stack/tile/wood/mahogany
+
+
+/obj/item/stack/tile/wood/maple
+	name = "maple wood floor tile"
+	color = WOOD_COLOR_PALE
+	turf_type = /turf/open/floor/wood/maple
+	merge_type = /obj/item/stack/tile/wood/maple
+
+/obj/item/stack/tile/wood/ebony
+	name = "ebony wood floor tile"
+	color = WOOD_COLOR_BLACK
+	turf_type = /turf/open/floor/wood/ebony
+	merge_type = /obj/item/stack/tile/wood/ebony
+
+/obj/item/stack/tile/wood/walnut
+	name = "walnut wood floor tile"
+	color = WOOD_COLOR_CHOCOLATE
+	turf_type = /turf/open/floor/wood/walnut
+	merge_type = /obj/item/stack/tile/wood/walnut
+
+/obj/item/stack/tile/wood/bamboo
+	name = "bamboo wood floor tile"
+	color = WOOD_COLOR_PALE2
+	turf_type = /turf/open/floor/wood/bamboo
+	merge_type = /obj/item/stack/tile/wood/bamboo
+
+/obj/item/stack/tile/wood/birch
+	name = "birch wood floor tile"
+	color = WOOD_COLOR_PALE3
+	turf_type = /turf/open/floor/wood/bamboo
+	merge_type = /obj/item/stack/tile/wood/bamboo
+
+/obj/item/stack/tile/wood/yew
+	name = "yew wood floor tile"
+	color = WOOD_COLOR_YELLOW
+	turf_type = /turf/open/floor/wood/yew
+	merge_type = /obj/item/stack/tile/wood/yew
+>>>>>>> 9cf16a1628 (Wood riddance (#1302))
 
 //Basalt
 /obj/item/stack/tile/basalt
