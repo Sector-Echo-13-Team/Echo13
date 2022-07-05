@@ -39,8 +39,14 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/yew,
+<<<<<<< HEAD
 /area/mine/unexplored)
 "o" = (
+=======
+/area/ruin/unpowered)
+"q" = (
+/obj/structure/spider/cocoon,
+>>>>>>> 3e1a390185 (Fixes a space tile I missed in jungle_surface_ninjashrine (#1287))
 /turf/open/floor/plating/dirt/jungle/dark,
 /area/mine/unexplored)
 "u" = (
