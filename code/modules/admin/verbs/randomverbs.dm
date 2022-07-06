@@ -954,8 +954,13 @@
 				return
 			to_chat(target, "<span class='userdanger'>You do nyat feew vewy good!</span>", confidential = TRUE)
 			var/mob/living/carbon/dude = target
+<<<<<<< HEAD
 			var/obj/item/organ/tongue/felinid/tonje = new
 			tonje.Insert(dude, TRUE, FALSE)//WS End - Admin Punishment: Cat Tongue
+=======
+			var/obj/item/organ/tongue/uwuspeak/tonje = new
+			tonje.Insert(dude, TRUE, FALSE)
+>>>>>>> 363832b004 (Removes felinids* (#1062))
 
 	punish_log(target, punishment)
 
