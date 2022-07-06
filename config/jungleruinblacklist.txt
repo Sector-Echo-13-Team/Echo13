@@ -24,3 +24,8 @@
 #_maps/RandomRuins/JungleRuins/jungle_syndicate.dmm
 #_maps/RandomRuins/JungleRuins/jungle_village.dmm
 #_maps/RandomRuins/JungleRuins/jungle_witch.dmm
+<<<<<<< HEAD
+=======
+#_maps/RandomRuins/JungleRuins/jungle_medtech_outbreak.dmm
+#_maps/RandomRuins/JungleRuins/jungle_interceptor.dmm
+>>>>>>> f30a18abc2 (Adds a new jungle ruin, 'Old Crashed Interceptor' (#1216))
