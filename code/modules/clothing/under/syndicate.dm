@@ -228,3 +228,40 @@
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON
 	alt_covers_chest = TRUE
 	fitted = FEMALE_UNIFORM_TOP
+<<<<<<< HEAD
+=======
+
+/obj/item/clothing/under/syndicate/inteq/artificer
+	name = "inteq artificer overalls"
+	desc = "A black set of overalls atop a standard issue turtleneck, for the IRMG's support division engineers."
+	icon_state = "inteqeng"
+
+/obj/item/clothing/under/syndicate/inteq/skirt/artificer
+	name = "inteq artificer overall skirt"
+	desc = "A black set of overalls in the likeness of a skirt atop a standard issue turtleneck, for the IRMG's support division engineers."
+	icon_state = "inteqeng_skirt"
+
+/obj/item/clothing/under/syndicate/inteq/corpsman
+	name = "inteq corpsman turtleneck"
+	desc = "A sterile white turtleneck with tactical cargo pants, it is emblazoned with the lettering 'IRMG' on the shoulder. For the IRMG's support division corpsmen."
+	icon_state = "inteqmed"
+
+/obj/item/clothing/under/syndicate/inteq/skirt/corpsman
+	name = "inteq corpsman skirtleneck"
+	desc = "A sterile white turtleneck with a free flowing black skirt, it is emblazoned with the lettering 'IRMG' on the shoulder. For the IRMG's support division corpsmen."
+	icon_state = "inteqmed_skirt"
+
+/obj/item/clothing/under/syndicate/inteq/skirt/maid
+	name = "inteq tactical maid outfit"
+	desc = "A 'tactical' turtleneck fashioned to the likeness of a maid outfit. This one is lovingly knitted in the colors of the IRMG."
+	icon_state = "inteqmaid"
+	item_state = "inteqmaid"
+	can_adjust = FALSE
+
+/obj/item/clothing/under/syndicate/inteq/skirt/maid/Initialize()
+	. = ..()
+	var/obj/item/clothing/accessory/maidapron/inteq/A = new (src)
+	attach_accessory(A)
+
+
+>>>>>>> e7decbffd9 (Komodo class warship (#1253))

@@ -174,3 +174,24 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	alt_uniform = null
 	glasses = null
+<<<<<<< HEAD
+=======
+
+/datum/outfit/job/engineer/independent/ship_engineer
+	name = "Ship Engineer (Independent)"
+
+	belt = /obj/item/storage/belt/utility/full/engi
+	uniform = /obj/item/clothing/under/rank/security/officer/military/eng
+	suit = /obj/item/clothing/suit/toggle/hazard
+	shoes = /obj/item/clothing/shoes/workboots
+
+	head = null
+	backpack = /obj/item/storage/backpack
+	satchel = /obj/item/storage/backpack/satchel/
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	courierbag = /obj/item/storage/backpack/messenger
+	l_pocket = /obj/item/radio
+	r_pocket = /obj/item/analyzer
+	glasses = /obj/item/clothing/glasses/welding
+
+>>>>>>> e7decbffd9 (Komodo class warship (#1253))
