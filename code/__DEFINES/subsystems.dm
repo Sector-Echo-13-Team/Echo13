@@ -57,6 +57,8 @@
 ///In most cases you want a subsystem instead, so don't use this unless you have a good reason
 #define TIMER_LOOP (1<<5)
 
+///Delete the timer on parent datum Destroy() and when deltimer'd
+#define TIMER_DELETE_ME (1<<6)
 ///Empty ID define
 #define TIMER_ID_NULL -1
 
@@ -176,6 +178,11 @@
 #define FIRE_PRIORITY_OVERLAYS 500
 #define FIRE_PRIORITY_CALLBACKS 600
 #define FIRE_PRIORITY_EXPLOSIONS 666
+<<<<<<< HEAD
+=======
+#define FIRE_PRIORITY_TIMER 700
+#define FIRE_PRIORITY_SPEECH_CONTROLLER 900
+>>>>>>> 42f16c8766 (ports numerous PRs from tg related to ssTimers (#1303))
 #define FIRE_PRIORITY_INPUT 1000 // This must always always be the max highest priority. Player input must never be lost.
 
 //Pipeline rebuild helper defines, these suck but it'll do for now
@@ -192,7 +199,16 @@
 
 #define RUNLEVELS_DEFAULT (RUNLEVEL_SETUP | RUNLEVEL_GAME | RUNLEVEL_POSTGAME)
 
-// SSair run section
+/**
+	Create a new timer and add it to the queue.
+	* Arguments:
+	* * callback the callback to call on timer finish
+	* * wait deciseconds to run the timer for
+	* * flags flags for this timer, see: code\__DEFINES\subsystems.dm
+*/
+#define addtimer(args...) _addtimer(args, file = __FILE__, line = __LINE__)
+
+// Air subsystem subtasks
 #define SSAIR_PIPENETS 1
 #define SSAIR_ATMOSMACHINERY 2
 #define SSAIR_EXCITEDGROUPS 3
