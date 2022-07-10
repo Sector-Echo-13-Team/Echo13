@@ -1859,6 +1859,11 @@
 #include "code\modules\discord\tgs_commands.dm"
 #include "code\modules\discord\toggle_notify.dm"
 #include "code\modules\disks\disk.dm"
+<<<<<<< HEAD
+=======
+#include "code\modules\donator\_donator.dm"
+#include "code\modules\donator\ianthewanderer.dm"
+>>>>>>> a9dccd9db9 (Donator clothing framework | one donator item (#1324))
 #include "code\modules\economy\_economy.dm"
 #include "code\modules\economy\account.dm"
 #include "code\modules\economy\pay_stand.dm"
