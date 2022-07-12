@@ -3,9 +3,15 @@
 	id = SPECIES_KEPORI
 	default_color = "6060FF"
 	species_traits = list(MUTCOLORS, EYECOLOR, NO_UNDERWEAR)
+<<<<<<< HEAD
 	inherent_traits = list(TRAIT_HOLDABLE)
 	mutant_bodyparts = list("kepori_feathers", "kepori_body_feathers")
 	default_features = list("mcolor" = "0F0", "wings" = "None", "kepori_feathers" = "Plain", "kepori_body_feathers" = "Plain", "body_size" = "Normal")
+=======
+	inherent_traits = list(TRAIT_SCOOPABLE)
+	mutant_bodyparts = list("kepori_body_feathers", "kepori_tail_feathers", "kepori_feathers")
+	default_features = list("mcolor" = "0F0", "wings" = "None", "kepori_feathers" = "Plain", "kepori_body_feathers" = "Plain", "kepori_tail_feathers" = "Fan")
+>>>>>>> f983faff44 (Kepori and dwarf scooping but again (#1256))
 	meat = /obj/item/reagent_containers/food/snacks/meat/slab/chicken
 	disliked_food = GRAIN | GROSS
 	liked_food = MEAT
