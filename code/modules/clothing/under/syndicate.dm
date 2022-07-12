@@ -7,6 +7,7 @@
 	alt_covers_chest = TRUE
 	icon = 'icons/obj/clothing/under/syndicate.dmi'
 	mob_overlay_icon = 'icons/mob/clothing/under/syndicate.dmi'
+	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION
 
 /obj/item/clothing/under/syndicate/skirt
 	name = "tactical skirtleneck"
@@ -183,6 +184,20 @@
 	icon_state = "gec_ce"
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 10, "fire" = 80, "acid" = 40)
 
+<<<<<<< HEAD
+=======
+/obj/item/clothing/under/syndicate/skirt/maid
+	name = "tactical maid outfit"
+	desc = "A 'tactical' turtleneck fashioned to the likeness of a maid outfit. Why the Syndicate has these, you'll never know."
+	icon_state = "syndimaid"
+	item_state = "syndimaid"
+
+/obj/item/clothing/under/syndicate/skirt/maid/Initialize()
+	. = ..()
+	var/obj/item/clothing/accessory/maidapron/syndicate/A = new (src)
+	attach_accessory(A)
+
+>>>>>>> 5c606b57cf (Syndicate & Mining Digi Sprites (#1314))
 /datum/outfit/syndicate/intern
 	name = "Syndicate Operative - Intern"
 
