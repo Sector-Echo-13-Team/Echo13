@@ -39,12 +39,6 @@
 	description = "A place of shelter for a lone hermit, scraping by to live another day."
 	suffix = "icemoon_underground_hermit.dmm"
 
-/datum/map_template/ruin/icemoon/wendigo_cave
-	name = "Wendigo Cave"
-	id = "wendigocave"
-	description = "Into the jaws of the beast."
-	suffix = "icemoon_underground_wendigo_cave.dmm"
-
 /datum/map_template/ruin/icemoon/corpreject
 	name = "NT Security Solutions Site Gamma"
 	id = "corpreject"
@@ -56,3 +50,31 @@
 	id = "icecropolis"
 	description = "Blood and writhing flesh make up this citadel of horrors."
 	suffix = "icemoon_underground_icecropolis.dmm"
+<<<<<<< HEAD
+=======
+
+/datum/map_template/ruin/icemoon/syndicate_outpost
+	name = "Abandoned Syndicate Outpost"
+	id = "syndicate-outpost-icemoon"
+	description = "A outpost that used to be a staging area for nuclear operatives. The Syndicate have moved to another location, but this still remains."
+	suffix = "icemoon_underground_abandoned_newcops.dmm"
+
+/datum/map_template/ruin/icemoon/oldstation
+	id = "oldstation-icemoon"
+	suffix = "icemoon_underground_oldstation.dmm"
+	name = "Arctic Charlie Module Station"
+	description = "The crew of a outpost awaken one hundred years after a crisis. Awaking to a derelict outpost on the verge of collapse, and a hostile force of invading \
+	hivebots. Can the surviving crew overcome the odds and survive and rebuild, or will the cold embrace of the moon become their new home?"
+
+/datum/map_template/ruin/icemoon/drakelair
+	name = "Dragon's Lair"
+	id = "drake-lair"
+	description = "\"First the creature's Flame breathed from beneath the stone, Hot battle-fumes, and the earth rumbled.\""
+	suffix = "icemoon_underground_drakelair.dmm"
+
+/datum/map_template/ruin/icemoon/brazillian_lab
+	name = "Barricaded Compound"
+	id = "brazillian-lab"
+	description = "A conspicuous compound in the middle of the cold wasteland. What goodies are inside?"
+	suffix = "icemoon_underground_brazillianlab.dmm"
+>>>>>>> 132c0dc5a0 (Cleans up ruins (#1306))
