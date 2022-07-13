@@ -35,6 +35,11 @@
 
 	var/weed_rate = 1 //If the chance below passes, then this many weeds sprout during growth
 	var/weed_chance = 5 //Percentage chance per tray update to grow weeds
+<<<<<<< HEAD
+=======
+	var/research = 0 //defines "discovery value", which will give a one-time point payout if a seed is given to an R&D console. Seed discovery is determined on a ship-by-ship basis.
+	var/seed_flags = MUTATE_EARLY //Determines if a plant is allowed to mutate early at 30+ instability
+>>>>>>> 44a07b4331 (Research Interim: Redemption: Director's Cut (#1067))
 
 /obj/item/seeds/Initialize(mapload, nogenes = 0)
 	. = ..()
