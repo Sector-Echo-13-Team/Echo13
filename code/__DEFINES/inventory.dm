@@ -97,6 +97,11 @@
 #define NO_VARIATION (1<<0)
 #define DIGITIGRADE_VARIATION (1<<1)
 #define DIGITIGRADE_VARIATION_NO_NEW_ICON (1<<2)
+<<<<<<< HEAD
+=======
+#define VOX_VARIATION (1<<3)
+#define KEPORI_VARIATION (1<<4)
+>>>>>>> ef73455bce (Adds Kepori variation to some Syndicate & Faction suits (#1331))
 
 #define NOT_DIGITIGRADE 0
 #define FULL_DIGITIGRADE 1

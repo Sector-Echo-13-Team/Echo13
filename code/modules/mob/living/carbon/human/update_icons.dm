@@ -145,6 +145,15 @@ There are several things that need to be remembered:
 			else
 				uniform_overlay = U.build_worn_icon(default_layer = UNIFORM_LAYER, default_icon_file = icon_file, isinhands = FALSE, species = dna.species.species_clothing_path)
 
+<<<<<<< HEAD
+=======
+			else if((dna.species.bodytype & BODYTYPE_KEPORI) && (U.supports_variations & KEPORI_VARIATION))
+				icon_file = KEPORI_UNIFORM_PATH
+
+			if(!(icon_exists(icon_file, RESOLVE_ICON_STATE(U))))
+				handled_by_bodytype = FALSE
+				icon_file = U.mob_overlay_icon || DEFAULT_UNIFORM_PATH
+>>>>>>> ef73455bce (Adds Kepori variation to some Syndicate & Faction suits (#1331))
 
 		if(OFFSET_UNIFORM in dna.species.offset_features)
 			uniform_overlay.pixel_x += dna.species.offset_features[OFFSET_UNIFORM][1]
