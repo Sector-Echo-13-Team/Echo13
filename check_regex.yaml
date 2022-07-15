@@ -31,7 +31,11 @@ standards:
   - exactly: [4, '/mob text paths', '"/mob']
   - exactly: [54, '/obj text paths', '"/obj']
   - exactly: [0, '/turf text paths', '"/turf']
+<<<<<<< HEAD
   - exactly: [115, 'text2path uses', 'text2path']
+=======
+  - exactly: [118, 'text2path uses', 'text2path']
+>>>>>>> ec45c2babf (Readds Explosive Decompression (#132))
 
   - exactly: [22, 'world<< uses', 'world[ \t]*<<']
   - exactly: [0, 'world.log<< uses', 'world.log[ \t]*<<']

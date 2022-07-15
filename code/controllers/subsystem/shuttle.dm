@@ -314,7 +314,6 @@ SUBSYSTEM_DEF(shuttle)
 	template.load(BL, centered = FALSE, register = FALSE)
 
 	var/affected = template.get_affected_turfs(BL, centered=FALSE)
-
 	var/obj/docking_port/mobile/new_shuttle
 	var/list/stationary_ports = list()
 	// Search the turfs for docking ports
