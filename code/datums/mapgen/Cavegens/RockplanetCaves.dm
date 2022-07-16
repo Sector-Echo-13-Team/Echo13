@@ -29,6 +29,7 @@
 		/obj/structure/mecha_wreckage/ripley/firefighter = 3,
 		/obj/structure/mecha_wreckage/ripley/mkii = 3,
 		/obj/structure/reagent_dispensers/fueltank = 30,
+<<<<<<< HEAD
 		/obj/structure/girder = 30,
 		/obj/item/stack/ore/slag = 10,
 		/obj/item/stack/rods = 10,
@@ -43,6 +44,27 @@
 		/obj/structure/radioactive = 2,
 		/obj/structure/radioactive/stack = 2,
 		/obj/structure/radioactive/waste = 2)
+=======
+		/obj/item/stack/cable_coil/cut = 30,
+		/obj/effect/decal/cleanable/greenglow = 60,
+		/obj/effect/decal/cleanable/glass = 30,
+		/obj/structure/closet/crate/secure/loot = 3,
+		/obj/machinery/portable_atmospherics/canister/toxins = 3,
+		/obj/machinery/portable_atmospherics/canister/carbon_dioxide = 3,
+		/obj/structure/radioactive = 6,
+		/obj/structure/radioactive/stack = 6,
+		/obj/structure/radioactive/waste = 6,
+
+		/obj/structure/salvageable/machine = 20,
+		/obj/structure/salvageable/autolathe = 15,
+		/obj/structure/salvageable/computer = 10,
+		/obj/structure/salvageable/protolathe = 10,
+		/obj/structure/salvageable/circuit_imprinter = 8,
+		/obj/structure/salvageable/destructive_analyzer = 8,
+		/obj/structure/salvageable/server = 8,
+	)
+
+>>>>>>> b71aaf3eae (Removes Miasma (#1334))
 	feature_spawn_list = list(/obj/structure/geyser/random = 1, /obj/effect/mine/shrapnel/human_only = 1)
 
 	initial_closed_chance = 45

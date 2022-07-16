@@ -134,8 +134,12 @@
 	worth += C.air_contents.get_moles(GAS_BZ)*4
 	worth += C.air_contents.get_moles(GAS_STIMULUM)*100
 	worth += C.air_contents.get_moles(GAS_HYPERNOB)*1000
+<<<<<<< HEAD
 	worth += C.air_contents.get_moles(GAS_MIASMA)*10
 	worth += C.air_contents.get_moles(GAS_TRITIUM)*5
+=======
+	worth += C.air_contents.get_moles(GAS_TRITIUM)*4
+>>>>>>> b71aaf3eae (Removes Miasma (#1334))
 	worth += C.air_contents.get_moles(GAS_PLUOXIUM)*5
 	worth += C.air_contents.get_moles(GAS_FREON)*5
 	return worth
