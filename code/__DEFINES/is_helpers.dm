@@ -77,7 +77,11 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 #define issquidperson(A) (is_species(A, /datum/species/squid))
 #define isipc(A) (is_species(A, /datum/species/ipc))
 #define isspiderperson(A) (is_species(A, /datum/species/spider))
+<<<<<<< HEAD
 //WS End
+=======
+#define isdwarf(A) (is_species(A, /datum/species/dwarf))
+>>>>>>> eb9244937d (The Grand Limbgrower TGUI update, now two new research nodes, data disks, snazzy ui I modified specifically for this server, way more options, and a QoL feature (#1308))
 
 //more carbon mobs
 #define ismonkey(A) (istype(A, /mob/living/carbon/monkey))
