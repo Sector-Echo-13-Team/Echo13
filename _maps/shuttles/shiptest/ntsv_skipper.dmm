@@ -1656,7 +1656,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/frame/computer{
+/obj/machinery/computer/cargo/express{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -2421,7 +2421,6 @@
 /obj/effect/turf_decal/corner/yellow/bordercorner{
 	dir = 8
 	},
-/obj/machinery/computer/cargo/express,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "DQ" = (

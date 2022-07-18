@@ -2429,6 +2429,12 @@
 /obj/effect/turf_decal/box,
 /turf/open/floor/plating,
 /area/ship/maintenance)
+"VR" = (
+/obj/machinery/computer/cargo/express{
+	dir = 4
+	},
+/turf/open/floor/plasteel/mono/white,
+/area/ship/bridge)
 "Wv" = (
 /obj/structure/table/glass,
 /obj/item/storage/bag/plants,
@@ -3067,7 +3073,7 @@ Tz
 Sf
 wm
 xj
-Lj
+VR
 Sf
 zW
 mr
