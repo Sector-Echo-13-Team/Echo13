@@ -12,6 +12,14 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
+<<<<<<< HEAD
+=======
+        with:
+          ref: master
+      - uses: actions/checkout@v2
+      - name: Restore SpacemanDMM cache
+        uses: actions/cache@v3
+>>>>>>> 4cc560163d (resolve check regex issues (#1367))
         with:
           ref: master
       - name: Python setup
@@ -58,6 +66,19 @@ jobs:
         if: always()
         with:
           outputFile: output-annotations.txt
+<<<<<<< HEAD
+=======
+      - uses: actions/setup-python@v1
+        with:
+          python-version: "3.9"
+      - name: Run Check Regex
+        run: |
+          tools/bootstrap/python -m ci.check_regex --log-changes-only
+      - name: Annotate Regex Matches
+        if: always()
+        run: |
+          cat check_regex_output.txt
+>>>>>>> 4cc560163d (resolve check regex issues (#1367))
 
   compile_all_maps:
     name: Compile Maps
