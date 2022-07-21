@@ -520,10 +520,10 @@ There are several things that need to be remembered:
 /*
 Does everything in relation to building the /mutable_appearance used in the mob's overlays list
 covers:
- inhands and any other form of worn item
- centering large appearances
- layering appearances on custom layers
- building appearances from custom icon files
+inhands and any other form of worn item
+centering large appearances
+layering appearances on custom layers
+building appearances from custom icon files
 
 By Remie Richards (yes I'm taking credit because this just removed 90% of the copypaste in update_icons())
 
@@ -592,7 +592,11 @@ generate/load female uniform sprites matching all previously decided variables
 	return standing
 
 
+<<<<<<< HEAD
 /obj/item/proc/get_held_offsets()
+=======
+/obj/item/proc/get_held_offsets(direction)
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 	var/list/L
 	if(ismob(loc))
 		var/mob/M = loc
@@ -627,11 +631,16 @@ generate/load female uniform sprites matching all previously decided variables
 					break
 
 // Only renders the head of the human
+<<<<<<< HEAD
 /mob/living/carbon/human/proc/update_body_parts_head_only(var/update_limb_data)
 	if (!dna)
 		return
 
 	if (!dna.species)
+=======
+/mob/living/carbon/human/proc/update_body_parts_head_only(update_limb_data)
+	if (!dna?.species)
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 		return
 
 	var/obj/item/bodypart/HD = get_bodypart("head")

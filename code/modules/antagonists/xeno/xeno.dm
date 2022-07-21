@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+//XENO TEAM
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /datum/team/xeno
 	name = "Aliens"
 

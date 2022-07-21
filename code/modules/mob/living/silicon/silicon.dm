@@ -445,3 +445,19 @@
 
 /mob/living/silicon/on_standing_up()
 	return // Silicons are always standing by default.
+<<<<<<< HEAD
+=======
+
+// Silicon equivalent of ID card ship access procs
+/mob/living/silicon/proc/add_ship_access(datum/overmap/ship/controlled/ship)
+	if ( ship )
+		ship_access += ship
+
+/mob/living/silicon/proc/remove_ship_access(datum/overmap/ship/controlled/ship)
+	if ( ship )
+		ship_access -= ship
+
+/mob/living/silicon/proc/has_ship_access(datum/overmap/ship/controlled/ship)
+	if ( ship )
+		return ship_access.Find( ship )
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))

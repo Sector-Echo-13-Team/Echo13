@@ -78,7 +78,7 @@
 	apply_overlay(HANDS_LAYER)
 
 
-/mob/living/carbon/update_fire(var/fire_icon = "Generic_mob_burning")
+/mob/living/carbon/update_fire(fire_icon = "Generic_mob_burning")
 	remove_overlay(FIRE_LAYER)
 	if(on_fire || islava(loc))
 		var/mutable_appearance/new_fire_overlay = mutable_appearance('icons/mob/OnFire.dmi', fire_icon, -FIRE_LAYER)
@@ -209,7 +209,7 @@
 /mob/living/carbon/update_body()
 	update_body_parts()
 
-/mob/living/carbon/proc/update_body_parts(var/update_limb_data)
+/mob/living/carbon/proc/update_body_parts(update_limb_data)
 	//Check the cache to see if it needs a new sprite
 	update_damage_overlays()
 	var/list/needs_update = list()
@@ -275,3 +275,69 @@
 	. += "[BP.husk_type]"
 	. += "-husk"
 	. += "-[BP.body_zone]"
+<<<<<<< HEAD
+=======
+
+////Extremely special handling for species with abnormal hand placement. This essentially rebuilds the hand overlay every
+////rotation, with every direction having a unique pixel offset for in-hands.
+////On species gain, a signal is registered to track direction changes.
+////SPECIAL_HAND_OVERLAY is for rendering items under the body.
+/mob/living/carbon/proc/update_hands_on_rotate() //Required for unconventionally placed hands on species
+	SIGNAL_HANDLER
+	if(!layered_hands) //Defined in human_defines.dm
+		RegisterSignal(src, COMSIG_ATOM_DIR_CHANGE, .proc/special_update_hands)
+		layered_hands = TRUE
+
+/mob/living/carbon/proc/stop_updating_hands()
+	if(layered_hands)
+		UnregisterSignal(src, COMSIG_ATOM_DIR_CHANGE)
+		layered_hands = FALSE
+		remove_overlay(HANDS_UNDER_BODY_LAYER)
+
+/mob/living/carbon/proc/special_update_hands(mob/M, olddir, newdir, override = FALSE)
+	if(olddir == newdir && !override)
+		return
+	if(!newdir)
+		newdir = dir //For when update_inv_hands() calls this proc instead of the signal
+	remove_overlay(HANDS_LAYER)
+	remove_overlay(HANDS_UNDER_BODY_LAYER)
+	if (handcuffed)
+		drop_all_held_items()
+		return
+
+	var/list/hands = list()
+	var/list/hands_alt = list()
+	for(var/obj/item/I in held_items)
+		if(client && hud_used && hud_used.hud_version != HUD_STYLE_NOHUD)
+			I.screen_loc = ui_hand_position(get_held_index_of_item(I))
+			client.screen += I
+		var/t_state = I.item_state
+		if(!t_state)
+			t_state = I.icon_state
+		var/icon_file = I.lefthand_file
+		var/layer
+		var/mutable_appearance/hand_overlay
+		if(get_held_index_of_item(I) % 2 == 0)
+			icon_file = I.righthand_file
+			if(newdir == WEST || newdir == NORTH)
+				layer = HANDS_UNDER_BODY_LAYER //If facing left or up, the right hand's sprite will be rendered under the mob
+			else
+				layer = HANDS_LAYER
+			hand_overlay = I.build_worn_icon(default_layer = layer, default_icon_file = icon_file, isinhands = TRUE, direction = newdir)
+
+		else
+			if(newdir == EAST || newdir == NORTH)
+				layer = HANDS_UNDER_BODY_LAYER //If facing right or up, the left hand's sprite will be rendered under the mob
+			else
+				layer = HANDS_LAYER
+			hand_overlay = I.build_worn_icon(default_layer = layer, default_icon_file = icon_file, isinhands = TRUE, direction = newdir)
+
+		if(layer == HANDS_LAYER)
+			hands += hand_overlay
+		else
+			hands_alt += hand_overlay
+	overlays_standing[HANDS_LAYER] = hands
+	overlays_standing[HANDS_UNDER_BODY_LAYER] = hands_alt
+	apply_overlay(HANDS_LAYER)
+	apply_overlay(HANDS_UNDER_BODY_LAYER)
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))

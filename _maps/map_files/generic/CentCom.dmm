@@ -1753,7 +1753,7 @@
 "akv" = (
 /obj/machinery/door/poddoor/shuttledock{
 	checkdir = 1;
-	name = "syndicate blast door";
+	name = "Syndicate Blast Door";
 	turftype = /turf/open/floor/plating/asteroid/snow
 	},
 /turf/open/floor/plating,
@@ -2602,7 +2602,7 @@
 /area/centcom/ferry)
 "ape" = (
 /obj/machinery/keycard_auth{
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
@@ -2759,7 +2759,7 @@
 "aqp" = (
 /obj/structure/closet/secure_closet/ertCom,
 /obj/structure/sign/directions/command{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel,
@@ -3563,7 +3563,7 @@
 "aud" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "nukeop_ready";
-	name = "shuttle dock"
+	name = "Shuttle Dock"
 	},
 /turf/open/floor/plating,
 /area/syndicate_mothership/control)
@@ -4278,7 +4278,7 @@
 "axD" = (
 /obj/structure/closet/secure_closet/ertEngi,
 /obj/machinery/airalarm{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 6
@@ -4529,7 +4529,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/corner/blue{
 	dir = 4
@@ -4948,7 +4948,7 @@
 /obj/structure/closet/secure_closet/ertSec,
 /obj/structure/sign/directions/security{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -5107,7 +5107,7 @@
 /obj/item/pen/blue,
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -6336,7 +6336,7 @@
 /obj/machinery/power/apc{
 	dir = 4;
 	name = "Briefing Area APC";
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -6989,7 +6989,7 @@
 	},
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -7116,7 +7116,7 @@
 "aMk" = (
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -7605,14 +7605,14 @@
 	layer = 3.5;
 	name = "CC Customs 1 Control";
 	pixel_x = 8;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/machinery/button/door/indestructible{
 	id = "XCCcustoms2";
 	layer = 3.5;
 	name = "CC Customs 2 Control";
 	pixel_x = -8;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/red,
 /obj/effect/turf_decal/corner/red{
@@ -8013,14 +8013,14 @@
 	id = "XCCFerry";
 	name = "Hanger Bay Shutters";
 	pixel_x = -8;
-	pixel_y = 24;
+	pixel_y = 25;
 	req_access_txt = "101"
 	},
 /obj/machinery/button/door/indestructible{
 	id = "XCCsec3";
 	name = "CC Main Access Control";
 	pixel_x = 8;
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/machinery/button/door/indestructible{
 	id = "XCCsec1";
@@ -9064,7 +9064,7 @@
 	},
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -9377,7 +9377,7 @@
 /obj/machinery/button/door/indestructible{
 	id = "XCCsec1";
 	name = "CC Shutter 1 Control";
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 10
@@ -9597,7 +9597,7 @@
 /obj/machinery/button/door/indestructible{
 	id = "XCCFerry";
 	name = "Hanger Bay Shutters";
-	pixel_y = 24;
+	pixel_y = 25;
 	req_access_txt = "101"
 	},
 /obj/effect/turf_decal/industrial/warning{
@@ -9852,8 +9852,8 @@
 	id = "XCCcustoms1";
 	layer = 3;
 	name = "CC Emergency Docks Control";
-	pixel_x = 24;
-	pixel_y = 24
+	pixel_x = 25;
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -10332,7 +10332,7 @@
 "aTf" = (
 /obj/structure/closet/secure_closet/ertEngi,
 /obj/structure/sign/directions/engineering{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel,
@@ -10775,7 +10775,7 @@
 	},
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -10907,7 +10907,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -11295,7 +11295,7 @@
 	},
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -11977,7 +11977,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -12199,7 +12199,7 @@
 	},
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -12225,7 +12225,7 @@
 	},
 /obj/machinery/power/apc{
 	name = "Briefing Room APC";
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -12351,7 +12351,7 @@
 /obj/structure/closet/secure_closet/ertMed,
 /obj/structure/sign/directions/medical{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -13035,7 +13035,7 @@
 /obj/item/pen/fourcolor,
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -13894,7 +13894,7 @@
 /obj/item/book/codex_gigas,
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -14876,7 +14876,7 @@
 "hyx" = (
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/structure/filingcabinet/filingcabinet,
 /obj/effect/turf_decal/corner/neutral{
@@ -15042,7 +15042,7 @@
 /obj/machinery/power/apc{
 	dir = 8;
 	name = "Commander's Office APC";
-	pixel_x = -24
+	pixel_x = -25
 	},
 /obj/effect/turf_decal/industrial/warning,
 /obj/effect/decal/cleanable/dirt,
@@ -15278,8 +15278,8 @@
 /obj/machinery/button/door/indestructible{
 	id = "XCCsec3";
 	name = "XCC Shutter 3 Control";
-	pixel_x = 24;
-	pixel_y = -24
+	pixel_x = 25;
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -15368,7 +15368,7 @@
 	},
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -15398,7 +15398,7 @@
 "jPr" = (
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/corner/brown{
 	dir = 1
@@ -15469,8 +15469,8 @@
 	id = "XCCsecdepartment";
 	layer = 3;
 	name = "CC Security Checkpoint Control";
-	pixel_x = 24;
-	pixel_y = 24
+	pixel_x = 25;
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 10
@@ -15513,8 +15513,8 @@
 /obj/machinery/button/door/indestructible{
 	id = "XCCsec3";
 	name = "XCC Shutter 3 Control";
-	pixel_x = -24;
-	pixel_y = 24
+	pixel_x = -25;
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 6
@@ -15627,7 +15627,7 @@
 "kTF" = (
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/structure/filingcabinet/filingcabinet,
 /obj/effect/turf_decal/corner/neutral{
@@ -16035,7 +16035,7 @@
 /obj/structure/closet/secure_closet/quartermaster,
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plasteel,
@@ -16757,7 +16757,7 @@
 "qsF" = (
 /obj/machinery/airalarm{
 	dir = 4;
-	pixel_x = -24
+	pixel_x = -25
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -17041,7 +17041,7 @@
 /obj/structure/bookcase/random,
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -17664,7 +17664,7 @@
 	},
 /obj/item/radio,
 /obj/machinery/airalarm{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/plasteel,
@@ -17722,7 +17722,7 @@
 /obj/machinery/computer/security/wooden_tv,
 /obj/item/storage/secure/safe{
 	pixel_x = 32;
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -17809,7 +17809,7 @@
 /obj/item/assembly/flash/handheld,
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -18080,7 +18080,7 @@
 /area/ctf)
 "wsh" = (
 /obj/machinery/keycard_auth{
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/structure/table/reinforced,
 /obj/item/stack/packageWrap,
@@ -18149,7 +18149,7 @@
 /obj/structure/filingcabinet/filingcabinet,
 /obj/machinery/airalarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 9
@@ -18276,7 +18276,7 @@
 /obj/item/pen/fourcolor,
 /obj/machinery/airalarm{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1

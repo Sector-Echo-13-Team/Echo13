@@ -398,6 +398,24 @@
 		return "[icon2html(get_cached_flat_icon(), user)] [thats? "That's ":""][get_examine_name(user)]" //displays all overlays in chat
 	return ..()
 
+<<<<<<< HEAD
+=======
+// Adds the referenced ship directly to the card
+/obj/item/card/id/proc/add_ship_access(datum/overmap/ship/controlled/ship )
+	if ( ship )
+		ship_access += ship
+
+// Removes the referenced ship from the card
+/obj/item/card/id/proc/remove_ship_access(datum/overmap/ship/controlled/ship )
+	if ( ship )
+		ship_access -= ship
+
+// Finds the referenced ship in the list
+/obj/item/card/id/proc/has_ship_access(datum/overmap/ship/controlled/ship )
+	if ( ship )
+		return ship_access.Find( ship )
+
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /*
 Usage:
 update_label()
@@ -622,6 +640,12 @@ update_label()
 	access = get_all_centcom_access()
 	. = ..()
 
+<<<<<<< HEAD
+=======
+/obj/item/card/id/centcom/has_ship_access(datum/overmap/ship/controlled/ship )
+	return TRUE
+
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /obj/item/card/id/ert
 	name = "\improper CentCom ID"
 	id_type_name = "\improper CentCom ID"

@@ -458,7 +458,15 @@
 		to_chat(usr, "<span class='warning'>The few weeds in [src] seem to react, but only for a moment...</span>")
 
 
+<<<<<<< HEAD
 /obj/machinery/hydroponics/proc/plantdies() // OH NOES!!!!! I put this all in one function to make things easier
+=======
+/**
+ * Plant Death Proc.
+ * Cleans up various stats for the plant upon death, including pests, harvestability, and plant health.
+ */
+/obj/machinery/hydroponics/proc/plantdies()
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 	plant_health = 0
 	harvest = 0
 	pestlevel = 0 // Pests die

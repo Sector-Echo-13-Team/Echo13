@@ -64,6 +64,14 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+<<<<<<< HEAD
+=======
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "bb" = (
@@ -373,6 +381,12 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 10
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/firealarm{
+	pixel_y = 25
+	},
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "gy" = (
@@ -1577,6 +1591,16 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/construction)
+<<<<<<< HEAD
+=======
+"xL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/firealarm{
+	pixel_y = 25
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/hallway/central)
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 "ya" = (
 /obj/structure/cable{
 	icon_state = "1-2"

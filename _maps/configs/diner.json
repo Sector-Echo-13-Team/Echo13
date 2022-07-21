@@ -7,7 +7,15 @@
 		"Bartender": 1,
 		"Cook": 5,
 		"Botanist": 2,
+<<<<<<< HEAD
 		"Janitor": 1
+=======
+		"Janitor": 1,
+		"Waiter": {
+			"outfit": "/datum/outfit/job/assistant/waiter",
+			"slots": 2
+		}
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 	},
 	"cost": 750
 }

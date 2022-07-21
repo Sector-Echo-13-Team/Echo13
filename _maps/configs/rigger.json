@@ -1,5 +1,10 @@
 {
 	"map_name": "Riggs-class Sloop",
+<<<<<<< HEAD:_maps/configs/rigger.json
+=======
+	"prefix": "SV",
+	"namelists": ["GENERAL", "SPACE", "NATURAL", "NATURAL_AGGRESSIVE"],
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349)):_maps/configs/independent_rigger.json
 	"map_short_name": "Riggs-class",
 	"map_path": "_maps/shuttles/shiptest/rigger.dmm",
 	"map_id": "rigger",
@@ -18,7 +23,7 @@
 		"Ship's Doctor": {
 			"outfit": "/datum/outfit/job/doctor",
 			"slots": 1
-			},
+		},
 		"Machinist's Mate": {
 			"outfit": "/datum/outfit/job/engineer/hazard",
 			"slots": 2

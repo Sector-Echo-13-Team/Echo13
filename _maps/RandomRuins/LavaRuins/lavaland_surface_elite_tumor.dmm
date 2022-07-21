@@ -1,5 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
+<<<<<<< HEAD:_maps/RandomRuins/LavaRuins/lavaland_surface_elite_tumor.dmm
 /turf/template_noop,
 /area/lavaland/surface/outdoors)
 "b" = (
@@ -9,6 +10,18 @@
 "c" = (
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
+=======
+/turf/open/floor/holofloor/plating,
+/area/template_noop)
+"t" = (
+/obj/structure/table,
+/turf/open/floor/holofloor/plating,
+/area/template_noop)
+"H" = (
+/obj/structure/table,
+/turf/open/floor/holofloor/plating,
+/area/template_noop)
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349)):_maps/templates/holodeck_skatepark.dmm
 
 (1,1,1) = {"
 a

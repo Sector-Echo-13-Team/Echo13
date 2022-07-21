@@ -66,6 +66,10 @@
 	* Must be on a turf
 */
 /atom/movable/Adjacent(atom/neighbor)
+<<<<<<< HEAD
+=======
+	var/turf/T = loc
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 	if(neighbor == loc)
 		return TRUE
 	var/turf/T = loc

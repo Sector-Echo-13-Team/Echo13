@@ -204,7 +204,11 @@
 	return result
 
 
+<<<<<<< HEAD
 /obj/item/seeds/proc/prepare_result(var/obj/item/T)
+=======
+/obj/item/seeds/proc/prepare_result(obj/item/reagent_containers/food/snacks/grown/T)
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 	if(!T.reagents)
 		CRASH("[T] has no reagents.")
 

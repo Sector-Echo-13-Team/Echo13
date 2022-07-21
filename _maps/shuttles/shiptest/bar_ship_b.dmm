@@ -46,7 +46,7 @@
 "bM" = (
 /obj/machinery/airalarm/all_access{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -88,8 +88,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = 24
+	pixel_x = -25;
+	pixel_y = 25
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
@@ -109,8 +109,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = 24
+	pixel_x = -25;
+	pixel_y = 25
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -126,7 +126,7 @@
 	},
 /obj/machinery/airalarm/all_access{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/machinery/vending/autodrobe,
 /turf/open/floor/carpet/nanoweave/red,
@@ -359,7 +359,12 @@
 /area/ship/crew/canteen)
 "ie" = (
 /obj/machinery/advanced_airlock_controller{
+<<<<<<< HEAD
 	pixel_x = 24
+=======
+	locked = 0;
+	pixel_x = 25
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 	},
 /obj/structure/chair,
 /obj/item/radio/intercom{
@@ -369,7 +374,7 @@
 /area/ship/crew/canteen)
 "iP" = (
 /obj/machinery/airalarm/all_access{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
@@ -423,8 +428,8 @@
 /area/ship/crew/canteen)
 "jv" = (
 /obj/machinery/light_switch{
-	pixel_x = 24;
-	pixel_y = -24
+	pixel_x = 25;
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/pod/dark,
@@ -726,7 +731,7 @@
 	pixel_x = -12
 	},
 /obj/structure/mirror{
-	pixel_x = -24
+	pixel_x = -25
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
@@ -991,8 +996,8 @@
 /area/ship/crew/canteen)
 "vb" = (
 /obj/machinery/light_switch{
-	pixel_x = 24;
-	pixel_y = -24
+	pixel_x = 25;
+	pixel_y = -25
 	},
 /obj/structure/closet/secure_closet/freezer/wall{
 	pixel_y = -31
@@ -1186,7 +1191,6 @@
 /area/ship/crew/canteen)
 "zD" = (
 /obj/structure/chair/stool,
-/obj/structure/chair/stool,
 /turf/open/floor/carpet/black,
 /area/ship/crew/canteen)
 "zE" = (
@@ -1226,8 +1230,14 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
+<<<<<<< HEAD
 /obj/machinery/atmospherics/components/unary/vent_pump/layer2{
 	dir = 4
+=======
+/obj/machinery/airalarm/all_access{
+	dir = 1;
+	pixel_y = -25
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 	},
 /obj/machinery/light/small{
 	dir = 1
@@ -1375,7 +1385,7 @@
 	},
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/item/soap/syndie,
 /turf/open/floor/plasteel/patterned,
@@ -1467,8 +1477,8 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/light_switch{
-	pixel_x = 24;
-	pixel_y = -24
+	pixel_x = 25;
+	pixel_y = -25
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1572,8 +1582,8 @@
 /obj/machinery/button/door{
 	id = "cargoblastdoors";
 	name = "Blast Door Control";
-	pixel_x = 24;
-	pixel_y = 24
+	pixel_x = 25;
+	pixel_y = 25
 	},
 /turf/open/floor/pod/dark,
 /area/ship/cargo)
@@ -1629,7 +1639,7 @@
 /obj/machinery/light,
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /turf/open/floor/carpet/red,
 /area/ship/crew/canteen)
@@ -1945,7 +1955,7 @@
 "Qn" = (
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /turf/open/floor/carpet/red,
 /area/ship/crew/canteen)
@@ -1992,7 +2002,7 @@
 	},
 /obj/item/folder,
 /obj/machinery/computer/cryopod{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /turf/open/floor/carpet/nanoweave/red,
 /area/ship/crew)
@@ -2346,7 +2356,7 @@
 "Xd" = (
 /obj/machinery/airalarm/all_access{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/item/radio/intercom{
 	pixel_y = 20
@@ -2431,7 +2441,7 @@
 "Yr" = (
 /obj/structure/table/reinforced,
 /obj/machinery/airalarm/all_access{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/item/storage/box/donkpockets,
 /obj/effect/spawner/lootdrop/donkpockets,
@@ -2502,8 +2512,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = -24
+	pixel_x = -25;
+	pixel_y = -25
 	},
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,

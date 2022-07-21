@@ -3,11 +3,16 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
+<<<<<<< HEAD
 /obj/structure/window/shuttle,
 /turf/open/floor/plating,
 /area/ship/crew/canteen)
+=======
+/obj/structure/window/reinforced/fulltile,
+/area/ship/crew/chapel)
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 "aw" = (
 /obj/machinery/power/terminal,
 /obj/structure/cable,
@@ -26,7 +31,7 @@
 "aE" = (
 /obj/machinery/airalarm/all_access{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plating,
@@ -49,13 +54,17 @@
 "aJ" = (
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /turf/open/floor/wood,
 /area/ship/crew/solgov)
 "aT" = (
+<<<<<<< HEAD
 /obj/structure/lattice,
 /turf/closed/wall/mineral/titanium,
+=======
+/turf/closed/wall,
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /area/ship/construction)
 "bc" = (
 /obj/structure/closet/cardboard,
@@ -66,7 +75,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/window/shuttle{
 	color = "#E58E2D"
@@ -129,7 +138,7 @@
 	name = "Helm"
 	},
 /obj/item/radio/intercom/wideband{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /turf/open/floor/carpet/nanoweave/blue,
 /area/ship/bridge)
@@ -200,8 +209,35 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+<<<<<<< HEAD
 /turf/open/floor/carpet/nanoweave/red,
 /area/ship/security/prison)
+=======
+/obj/machinery/airalarm/all_access{
+	dir = 4;
+	pixel_x = -25
+	},
+/obj/structure/closet/cabinet{
+	name = "hunter cabinet"
+	},
+/obj/item/clothing/shoes/workboots/mining,
+/obj/item/clothing/shoes/workboots/mining,
+/obj/item/clothing/shoes/workboots/mining,
+/obj/item/clothing/under/suit/roumain,
+/obj/item/clothing/under/suit/roumain,
+/obj/item/clothing/under/suit/roumain,
+/obj/item/clothing/suit/armor/roumain,
+/obj/item/clothing/suit/armor/roumain,
+/obj/item/clothing/suit/armor/roumain,
+/obj/item/clothing/head/cowboy/sec/roumain,
+/obj/item/clothing/head/cowboy/sec/roumain,
+/obj/item/clothing/head/cowboy/sec/roumain,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/wood/yew,
+/area/ship/security)
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 "eb" = (
 /obj/machinery/atmospherics/components/unary/tank/toxins{
 	dir = 8
@@ -215,7 +251,7 @@
 "eh" = (
 /obj/machinery/firealarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/structure/chair{
 	dir = 8
@@ -417,7 +453,7 @@
 	},
 /obj/machinery/flasher{
 	id = "Cell2B";
-	pixel_x = -24
+	pixel_x = -25
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
@@ -525,7 +561,7 @@
 "iH" = (
 /obj/structure/closet/crate,
 /obj/machinery/airalarm/all_access{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/effect/spawner/lootdrop/maintenance/three,
 /obj/item/gun/ballistic/automatic/pistol/solgov,
@@ -577,6 +613,13 @@
 	dir = 1;
 	name = "Engine Access"
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/door/poddoor/shutters{
+	id = "riggerengwindows";
+	name = "Blast Shutters"
+	},
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "jI" = (
@@ -772,7 +815,7 @@
 "lT" = (
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/spawner/lootdrop/maintenance/two,
 /obj/effect/spawner/lootdrop/gloves,
@@ -839,7 +882,7 @@
 	dir = 1
 	},
 /obj/machinery/advanced_airlock_controller{
-	pixel_x = -24
+	pixel_x = -25
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
@@ -893,7 +936,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/window/shuttle,
 /turf/open/floor/plating,
@@ -1041,14 +1084,14 @@
 	dir = 4;
 	id = "riggerdoors";
 	name = "Blast Door Control";
-	pixel_x = -24;
+	pixel_x = -25;
 	pixel_y = 5
 	},
 /obj/machinery/button/door{
 	dir = 4;
 	id = "riggerwindows";
 	name = "Window Lockdown";
-	pixel_x = -24;
+	pixel_x = -25;
 	pixel_y = -5
 	},
 /obj/machinery/light{
@@ -1202,7 +1245,7 @@
 	},
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/machinery/light/small{
 	dir = 8
@@ -1216,7 +1259,7 @@
 /area/ship/bridge)
 "qk" = (
 /obj/structure/mirror{
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/structure/sink{
 	dir = 8;
@@ -1225,7 +1268,7 @@
 /obj/machinery/light/small,
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew)
@@ -1370,7 +1413,7 @@
 /area/ship/security)
 "rJ" = (
 /obj/machinery/airalarm/all_access{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/plating,
@@ -1418,11 +1461,24 @@
 	dir = 4
 	},
 /obj/machinery/airalarm/all_access{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
 /area/ship/engineering)
+<<<<<<< HEAD
+=======
+"sd" = (
+/obj/structure/grille,
+/obj/machinery/door/poddoor/shutters{
+	id = "riggerwindows";
+	name = "Blast Shutters"
+	},
+/obj/structure/window/reinforced/fulltile,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plating,
+/area/ship/engineering)
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 "sC" = (
 /obj/structure/chair{
 	dir = 1
@@ -1456,7 +1512,7 @@
 "sT" = (
 /obj/machinery/door/poddoor{
 	id = "riggerdoors";
-	name = "mech bay blast door"
+	name = "Mechbay Blast Door"
 	},
 /obj/structure/fans/tiny,
 /turf/open/floor/engine/hull/interior,
@@ -1557,6 +1613,13 @@
 	dir = 1;
 	name = "Engine Access"
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/door/poddoor/shutters{
+	id = "riggerengwindows";
+	name = "Blast Shutters"
+	},
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "uk" = (
@@ -1708,6 +1771,13 @@
 /obj/machinery/door/window/eastleft{
 	dir = 1
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/door/poddoor/shutters{
+	id = "riggerengwindows";
+	name = "Blast Shutters"
+	},
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "wk" = (
@@ -1935,7 +2005,7 @@
 "yi" = (
 /obj/machinery/airalarm/all_access{
 	dir = 4;
-	pixel_x = -24
+	pixel_x = -25
 	},
 /obj/structure/table,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -1964,6 +2034,13 @@
 	dir = 1;
 	name = "Engine Access"
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/door/poddoor/shutters{
+	id = "riggerengwindows";
+	name = "Blast Shutters"
+	},
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "yJ" = (
@@ -2009,6 +2086,13 @@
 	dir = 1;
 	name = "Engine Access"
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/door/poddoor/shutters{
+	id = "riggerengwindows";
+	name = "Blast Shutters"
+	},
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "yU" = (
@@ -2041,7 +2125,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/window/shuttle,
 /turf/open/floor/plating,
@@ -2215,8 +2299,12 @@
 /turf/open/floor/plating,
 /area/ship/crew/solgov)
 "Ce" = (
+<<<<<<< HEAD
 /obj/structure/lattice,
 /turf/closed/wall/mineral/titanium,
+=======
+/turf/closed/wall,
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /area/ship/crew)
 "Cf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -2348,7 +2436,12 @@
 	dir = 1
 	},
 /obj/machinery/computer/cryopod{
+<<<<<<< HEAD
 	pixel_y = -24
+=======
+	dir = 1;
+	pixel_y = -25
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
@@ -2457,7 +2550,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/window/shuttle{
 	color = "#E58E2D"
@@ -2490,7 +2583,7 @@
 "EF" = (
 /obj/machinery/airalarm/all_access{
 	dir = 4;
-	pixel_x = -24
+	pixel_x = -25
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plating,
@@ -2770,7 +2863,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/curtain,
 /obj/structure/window/shuttle,
@@ -3026,7 +3119,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/window/shuttle,
 /turf/open/floor/plating,
@@ -3133,7 +3226,7 @@
 /obj/machinery/power/apc/auto_name/west,
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/structure/chair{
 	dir = 4
@@ -3179,7 +3272,7 @@
 	},
 /obj/machinery/airalarm/all_access{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -3188,7 +3281,7 @@
 "Nf" = (
 /obj/machinery/airalarm/all_access{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/structure/table,
 /obj/machinery/reagentgrinder{
@@ -3371,7 +3464,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/window/shuttle,
 /turf/open/floor/plating,
@@ -3437,6 +3530,13 @@
 	dir = 1;
 	name = "Engine Access"
 	},
+<<<<<<< HEAD
+=======
+/obj/machinery/door/poddoor/shutters{
+	id = "riggerengwindows";
+	name = "Blast Shutters"
+	},
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "Qh" = (
@@ -3459,7 +3559,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/machinery/atmospherics/components/binary/pump/on/layer4{
 	dir = 8
@@ -3615,7 +3715,7 @@
 /area/ship/maintenance/port)
 "Rw" = (
 /obj/machinery/airalarm/all_access{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/corner/white/mono,
 /obj/effect/turf_decal/corner/green/half{
@@ -3627,7 +3727,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/window/shuttle,
 /turf/open/floor/plating,
@@ -3653,7 +3753,7 @@
 "RO" = (
 /obj/machinery/airalarm/all_access{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 10
@@ -3839,7 +3939,7 @@
 "Uf" = (
 /obj/machinery/firealarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/machinery/light/small,
 /obj/structure/ore_box,
@@ -3851,7 +3951,7 @@
 "Ul" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/grille,
 /obj/structure/window/shuttle,
@@ -3904,7 +4004,7 @@
 /obj/structure/grille,
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/window/shuttle,
 /turf/open/floor/plating,
@@ -3955,7 +4055,7 @@
 "VF" = (
 /obj/machinery/firealarm{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/structure/closet/emcloset,
 /obj/machinery/light/small{
@@ -3995,7 +4095,7 @@
 "VW" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "riggerwindows";
-	name = "blast shutters"
+	name = "Blast Shutters"
 	},
 /obj/structure/grille,
 /obj/structure/window/shuttle,
@@ -4192,7 +4292,7 @@
 /area/ship/engineering/atmospherics)
 "Yc" = (
 /obj/machinery/airalarm/all_access{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/structure/cable{
 	icon_state = "4-8"

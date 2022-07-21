@@ -12,7 +12,7 @@
 "bk" = (
 /obj/structure/table/reinforced,
 /obj/machinery/airalarm/all_access{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/item/storage/box/donkpockets,
 /obj/effect/turf_decal/corner/white/half,
@@ -33,7 +33,7 @@
 	},
 /obj/machinery/airalarm/all_access{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /obj/effect/turf_decal/box,
 /turf/open/floor/plasteel/dark,
@@ -72,8 +72,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = 24
+	pixel_x = -25;
+	pixel_y = 25
 	},
 /turf/open/floor/carpet/nanoweave,
 /area/ship/crew)
@@ -97,8 +97,8 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = 24
+	pixel_x = -25;
+	pixel_y = 25
 	},
 /obj/machinery/holopad,
 /turf/open/floor/plasteel/freezer,
@@ -122,7 +122,7 @@
 	},
 /obj/machinery/airalarm/all_access{
 	dir = 8;
-	pixel_x = 24
+	pixel_x = 25
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
@@ -360,7 +360,12 @@
 /area/ship/crew/hydroponics)
 "ie" = (
 /obj/machinery/advanced_airlock_controller{
+<<<<<<< HEAD
 	pixel_x = 24
+=======
+	locked = 0;
+	pixel_x = 25
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 	},
 /obj/structure/chair,
 /obj/item/radio/intercom{
@@ -372,7 +377,7 @@
 /obj/machinery/light,
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/canteen)
@@ -409,8 +414,8 @@
 /area/ship/crew/canteen)
 "jv" = (
 /obj/machinery/light_switch{
-	pixel_x = 24;
-	pixel_y = -24
+	pixel_x = 25;
+	pixel_y = -25
 	},
 /turf/open/floor/plasteel,
 /area/ship/cargo)
@@ -465,7 +470,7 @@
 /area/ship/crew/canteen)
 "ly" = (
 /obj/machinery/advanced_airlock_controller{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/layer4{
 	dir = 4
@@ -851,7 +856,7 @@
 /obj/machinery/hydroponics/constructable,
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /obj/effect/turf_decal/corner/neutral{
 	dir = 1
@@ -952,7 +957,7 @@
 	},
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
@@ -1224,7 +1229,7 @@
 /area/ship/crew/canteen)
 "AW" = (
 /obj/machinery/airalarm/all_access{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
@@ -1302,8 +1307,8 @@
 /area/ship/bridge)
 "Cx" = (
 /obj/machinery/light_switch{
-	pixel_x = 24;
-	pixel_y = -24
+	pixel_x = 25;
+	pixel_y = -25
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/bridge)
@@ -1363,7 +1368,7 @@
 	pixel_x = -12
 	},
 /obj/structure/mirror{
-	pixel_x = -24
+	pixel_x = -25
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/crew/canteen)
@@ -1430,7 +1435,13 @@
 /turf/closed/wall,
 /area/ship/maintenance)
 "DK" = (
+<<<<<<< HEAD
 /obj/machinery/door/airlock/external/glass,
+=======
+/obj/machinery/door/airlock/external/glass{
+	name = "Internal Airlock"
+	},
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
@@ -1593,8 +1604,8 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/light_switch{
-	pixel_x = 24;
-	pixel_y = -24
+	pixel_x = 25;
+	pixel_y = -25
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1978,7 +1989,7 @@
 	},
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance)
@@ -2097,7 +2108,7 @@
 "Qn" = (
 /obj/machinery/airalarm/all_access{
 	dir = 1;
-	pixel_y = -24
+	pixel_y = -25
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen)
@@ -2147,7 +2158,7 @@
 	},
 /obj/item/folder,
 /obj/machinery/computer/cryopod{
-	pixel_y = 24
+	pixel_y = 25
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
@@ -2374,8 +2385,8 @@
 /obj/machinery/button/door{
 	id = "cargoblastdoors";
 	name = "Blast Door Control";
-	pixel_x = 24;
-	pixel_y = 24
+	pixel_x = 25;
+	pixel_y = 25
 	},
 /turf/open/floor/plasteel,
 /area/ship/cargo)
@@ -2520,7 +2531,13 @@
 /turf/open/floor/wood,
 /area/ship/crew)
 "ZH" = (
+<<<<<<< HEAD
 /obj/machinery/door/airlock/external/glass,
+=======
+/obj/machinery/door/airlock/external/glass{
+	name = "Internal Airlock"
+	},
+>>>>>>> 954224419b ([READY][TM-REQ] Ports the CBT and TGUI refactors from /TG/ (#1349))
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
 "ZI" = (
@@ -2534,8 +2551,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = -24
+	pixel_x = -25;
+	pixel_y = -25
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/hydroponics)
