@@ -91,6 +91,12 @@
 	ammo_type = /obj/item/ammo_casing/c9mm
 	max_ammo = 30
 
+/obj/item/ammo_box/c9mm/surplus
+	name = "ammo box (9mm surplus)"
+	desc = "A box of low-quality 9mm ammo."
+	icon_state = "9mmbox-surplus"
+	ammo_type = /obj/item/ammo_casing/c9mm/surplus
+
 /obj/item/ammo_box/c9mm/rubbershot
 	name = "ammo box (9mm rubbershot)"
 	desc = "A box of 9mm rubbershot ammo, designed to disable targets without causing serious damage."
@@ -125,6 +131,12 @@
 	icon_state = "10mmbox"
 	ammo_type = /obj/item/ammo_casing/c10mm
 	max_ammo = 30
+
+/obj/item/ammo_box/c10mm/surplus
+	name = "ammo box (10mm surplus)"
+	desc = "A box of low-quality 10mm ammo."
+	icon_state = "10mmbox-surplus"
+	ammo_type = /obj/item/ammo_casing/c10mm/surplus
 
 /obj/item/ammo_box/c10mm/rubbershot
 	name = "ammo box (10mm rubbershot)"
@@ -161,6 +173,12 @@
 	ammo_type = /obj/item/ammo_casing/c45
 	max_ammo = 30
 
+/obj/item/ammo_box/c45/surplus
+	name = "ammo box (.45 surplus)"
+	desc = "A box of low-quality .45 ammo."
+	icon_state = "45box-surplus"
+	ammo_type = /obj/item/ammo_casing/c45/surplus
+
 /obj/item/ammo_box/c45/rubbershot
 	name = "ammo box (.45 rubbershot)"
 	desc = "A box of .45 rubbershot ammo, designed to disable targets without causing serious damage."
@@ -195,6 +213,12 @@
 	icon_state = "556mmHITPbox"
 	ammo_type = /obj/item/ammo_casing/caseless/c556mmHITP
 	max_ammo = 30
+
+/obj/item/ammo_box/c556mmHITP/surplus
+	name = "ammo box (5.56mm HITP caseless surplus)"
+	desc = "A box of low-quality 5.56mm HITP caseless ammo."
+	icon_state = "556mmHITPbox-surplus"
+	ammo_type = /obj/item/ammo_casing/caseless/c556mmHITP/surplus
 
 /obj/item/ammo_box/c556mmHITP/rubbershot
 	name = "ammo box (5.56mm HITP caseless rubbershot)"
@@ -252,3 +276,15 @@
 	icon_state = "foambox_riot"
 	ammo_type = /obj/item/ammo_casing/caseless/foam_dart/riot
 	custom_materials = list(/datum/material/iron = 50000)
+<<<<<<< HEAD
+=======
+
+/obj/item/ammo_box/magazine/zip_ammo_9mm
+	name = "budget pistol magazine(9mm)"
+	desc = "A knockoff commander magazine that can only hold 4 rounds."
+	icon_state = "ZipAmmo9mm"
+	ammo_type = /obj/item/ammo_casing/c9mm/surplus
+	caliber = "9mm"
+	max_ammo = 4
+	custom_materials = list(/datum/material/iron = 20000)
+>>>>>>> 8c15834155 (Surplus Ammo & A Bunch of Ammo Balance Tweaks (#1292))
