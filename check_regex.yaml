@@ -25,6 +25,7 @@ standards:
   - exactly: [8, 'escapes', '\\\\(red|blue|green|black|b|i[^mc])']
   - exactly: [9, 'Del()s', '\WDel\(']
 
+<<<<<<< HEAD
   - exactly: [1, '/atom text paths', '"/atom']
   - exactly: [1, '/area text paths', '"/area']
   - exactly: [17, '/datum text paths', '"/datum']
@@ -32,6 +33,15 @@ standards:
   - exactly: [54, '/obj text paths', '"/obj']
   - exactly: [0, '/turf text paths', '"/turf']
   - exactly: [115, 'text2path uses', 'text2path']
+=======
+    - exactly: [1, "/atom text paths", '"/atom']
+    - exactly: [1, "/area text paths", '"/area']
+    - exactly: [17, "/datum text paths", '"/datum']
+    - exactly: [4, "/mob text paths", '"/mob']
+    - exactly: [56, "/obj text paths", '"/obj']
+    - exactly: [0, "/turf text paths", '"/turf']
+    - exactly: [120, "text2path uses", "text2path"]
+>>>>>>> 68a2463857 (Grand Prosthetics Rework [MERGE ME PLEASE GOD] (#1236))
 
   - exactly: [22, 'world<< uses', 'world[ \t]*<<']
   - exactly: [0, 'world.log<< uses', 'world.log[ \t]*<<']
